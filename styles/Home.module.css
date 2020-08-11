@@ -1,0 +1,25 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(281.58deg, #0C3F84 -4.33%, rgba(12, 63, 132, 0.46) 140.46%);
+  color: #fff;
+}
+
+.logo {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 15px;
+}
+
+.header {
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.25rem;
+  font-style: italic;
+}
