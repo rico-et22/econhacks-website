@@ -3,7 +3,7 @@ import Container from '../components/container'
 
 export default function Welcome(props) {
   return (
-    <section>
+    <section className={styles.welcome}>
       <Container>
         <div className={styles.welcome_header}>
           <h1>Welcome to EconHacks</h1>
