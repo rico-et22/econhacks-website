@@ -28,7 +28,7 @@ export default function Welcome(props) {
           <div className={styles.welcome_cards_card}>
             <h2>Win prizes</h2>
             <p>
-              We have a total prize worth of XXk! Earn the rewarded for your hard work and get surport from our sponsors to continue grow your project after this hackathon! 
+              We have a total prize worth of XXk! Earn the rewarded for your hard work and get support from our sponsors to continue grow your project after this hackathon! 
             </p>
           </div>
           <div className={styles.welcome_cards_card}>
