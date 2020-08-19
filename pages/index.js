@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '../components/header'
 import Welcome from '../components/welcome'
+import Faq from '../components/faq'
 
 export default function Home(props) {
   return (
@@ -11,6 +12,7 @@ export default function Home(props) {
       </Head>
       <Header />
       <Welcome />
+      <Faq />
     </div>
   )
 }

@@ -1,5 +1,6 @@
 .welcome {
-  margin: 3rem 1rem;
+  margin: 3rem 0;
+  padding: 0 1rem;
 }
 .welcome_header h1 {
   font-size: 3rem;
