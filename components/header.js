@@ -1,14 +1,15 @@
 import styles from '../styles/Header.module.css'
 import Container from '../components/container'
+import Link from 'next/link'
 
 export default function Header(props) {
   return (
     <header className={styles.header}>
       <Container>
         <nav className={styles.nav}>
-          <div className={styles.nav_left}>
+          <Link href="/">
             <img src="logo.png" className={styles.logo}></img>
-          </div>
+          </Link>
           <div className={styles.nav_right}>
             <a href="#" className={styles.nav_link}>
               About

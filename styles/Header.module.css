@@ -2,6 +2,12 @@
   height: 6rem;
   width: 6rem;
   border-radius: 15px;
+  cursor: pointer;
+  transition: 100ms ease-in-out;
+}
+.logo:hover {
+  box-shadow: 0px 6.4px 14.4px rgba(0, 0, 0, 0.132), 0px 1.2px 3.6px rgba(0, 0, 0, 0.108);
+  transform: scale(1.05);
 }
 .header {
   background: linear-gradient(281.58deg, #0C3F84 -4.33%, rgba(12, 63, 132, 0.46) 140.46%);
@@ -22,7 +28,23 @@
   color: #fff;
   font-weight: bold;
   font-size: 1.5rem;
-  margin-right: 2.4375rem
+  margin-right: 2.4375rem;
+  position: relative;
+}
+.nav_link::after {
+  content: "";
+  position: absolute;
+  bottom: -.25rem;
+  left: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: .25rem;
+  transition: 300ms ease-in-out;
+}
+.nav_link:hover::after {
+  width: 100%;
 }
 .nav_link_cta {
   color: #fff;
@@ -31,6 +53,10 @@
   background: rgba(255, 255, 255, 0.19);
   padding: 1rem 1.5rem;
   border-radius: 50px;
+  transition: 200ms ease-in-out;
+}
+.nav_link_cta:hover {
+  background: rgba(255, 255, 255, 0.4);
 }
 .header_content {
   margin-top: 2.5rem;
@@ -59,7 +85,7 @@
   margin-bottom: 2.1875rem;
 }
 .header_cta_button {
-  background: linear-gradient(90deg, #D2C060 -10.29%, #C0B88F 128.68%);
+  background: #60b5bd/*96ad51*//*5aa6ad*//*ADA35A*//*ada251*//*423110*/;
   border-radius: 15px;
   color: #fff;
   padding: .625rem 2.75rem;
@@ -67,6 +93,12 @@
   font-size: 1.75rem;
   font-weight: bold;
   align-self: start;
+  transition: 200ms ease-in-out;
+}
+.header_cta_button:hover {
+  background: #5ead5a;
+  box-shadow: 0px 6.4px 14.4px rgba(0, 0, 0, 0.132), 0px 1.2px 3.6px rgba(0, 0, 0, 0.108);
+  transform: scale(1.05);
 }
 
 @media (max-width: 639.98px) {

@@ -37,6 +37,11 @@
   flex-direction: column;
   justify-content: center;
   margin: auto;
+  transition: 100ms ease-in-out;
+}
+.welcome_cards_card:hover {
+  box-shadow: 0px 6.4px 14.4px rgba(0, 0, 0, 0.132), 0px 1.2px 3.6px rgba(0, 0, 0, 0.108);
+  transform: scale(1.02);
 }
 @media (max-width: 1023.98px) {
   .welcome_cards_card {
