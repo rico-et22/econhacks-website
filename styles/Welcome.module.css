@@ -28,9 +28,9 @@
   position: relative;
 }
 .welcome_cards_card {
-  border: 4px solid #F0F0F0;
+  border: 1px solid #F0F0F0;
+  box-shadow: 0px 3.2px 7.2px rgba(0, 0, 0, 0.132), 0px 0.6px 1.8px rgba(0, 0, 0, 0.108);
   border-radius: 15px;
-  width: 28rem;
   height: 15rem;
   padding: 2rem 3.5rem;
   display: flex;
