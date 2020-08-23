@@ -10,8 +10,16 @@
   transform: scale(1.05);
 }
 .header {
-  background: linear-gradient(281.58deg, #0C3F84 -4.33%, rgba(12, 63, 132, 0.46) 140.46%);
+  background-image: url('/bkg.jpg');
+  background-position: center;
   min-height: 594px;
+  position: relative;
+  height: 100%;
+}
+.header_color_bg {
+  background-image: linear-gradient(281.58deg, #0C3F84 -4.33%, rgba(12, 63, 132, 0.46) 140.46%);
+  height: 100%;
+  min-height: inherit;
   padding: 0 1rem;
 }
 .description {
