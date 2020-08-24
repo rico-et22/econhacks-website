@@ -1,0 +1,148 @@
+.schedule {
+  padding: 3rem 1rem;
+}
+.schedule_header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.schedule_header h1 {
+  background: linear-gradient(281.58deg, #0C3F84 -4.33%, rgba(12, 63, 132, 0.46) 140.46%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 0;
+}
+.schedule_header p {
+  margin: 0;
+}
+.schedule_header p a {
+  transition: 200ms ease-in-out;
+}
+.schedule_header p a:hover{
+  color: #666;
+}
+.schedule_wrapper {
+  border: 1px solid #F0F0F0;
+  box-shadow: 0px 3.2px 7.2px rgba(0, 0, 0, 0.132), 0px 0.6px 1.8px rgba(0, 0, 0, 0.108);
+  border-radius: 0.9375rem;
+}
+.schedule_navbar {
+  background: #F8F8F8;
+  padding: .85rem 2rem;
+  border-radius: 0.9375rem 0.9375rem 0 0;
+  display: flex;
+  overflow-x: auto;
+}
+.schedule_navbar_button {
+  background: none;
+  border-radius: .6875rem;
+  border: 0;
+  padding: .75rem 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.schedule_navbar_button.active {
+  background: linear-gradient(281.58deg, #0C3F84 -4.33%, rgba(12, 63, 132, 0.46) 140.46%);
+  color: #fff;
+}
+.schedule_navbar_button:not(:last-of-type) {
+  margin-right: 2rem;
+}
+.schedule_content {
+  padding: 1rem 2rem;
+}
+.schedule_content h3 {
+  font-size: 1.75rem;
+  margin-top: .5rem;
+}
+.schedule_content_event .mobile, .schedule_content_event .desktop {
+  display: flex;
+}
+.schedule_content_event_time {
+  margin-right: 1rem;
+  display: flex;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  position: relative;
+}
+.schedule_content_event_time p {
+  font-weight: 700;
+  margin: 0 .75rem 0 0;
+  width: 6rem;
+  text-align: right;
+}
+.mobile .schedule_content_event_time p {
+  width: initial;
+  color: #666;
+}
+.schedule_content_event_time_dot_wrapper {
+  display: flex;
+  position: relative;
+}
+.schedule_content_event_time_dot_wrapper::after {
+  content: "";
+  position: absolute;
+  right: .5rem;
+  display: block;
+  height: 100%;
+  width: 3px;
+  background: #333;
+  z-index: -1;
+  transition: 300ms ease-in-out;
+}
+.mobile .schedule_content_event_time_dot_wrapper::after {
+  left: .5rem;
+}
+.schedule_content_event_time_dot {
+  width: 1.25rem;
+  height: 1.25rem;
+  background: rgb(46, 103, 184);
+  border-radius: 100%;
+}
+.schedule_content_event_mobile_description {
+  margin-left: 1rem;
+}
+.schedule_content_event_info {
+  width: 100%;
+}
+.schedule_content_event_info h4 {
+  margin-top: 0;
+  font-size: 1.25rem
+}
+.schedule_content_event_info p {
+  color: #666
+}
+@media (max-width: 767.98px) {
+  .desktop {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile {
+    display: none !important;
+  }
+}
+
+/*@media (max-width: 639.98px) {
+  .schedule_header p {
+    margin-top: .5rem;
+  }
+  .schedule_navbar_button {
+    font-size: 1.25rem;
+  }
+  .schedule_navbar {
+    padding: .85rem 1.5rem;
+  }
+  .schedule_content_event_time {
+    flex-direction: row-reverse;
+  }
+  .schedule_content_event_time_dot_wrapper::after {
+    left: .5rem;
+  }
+}*/
