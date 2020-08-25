@@ -3,6 +3,7 @@ import Header from '../components/header'
 import Welcome from '../components/welcome'
 import Faq from '../components/faq'
 import Schedule from '../components/schedule'
+import Workshops from '../components/workshops'
 
 export default function Home(props) {
   return (
@@ -15,6 +16,7 @@ export default function Home(props) {
       <Welcome />
       <Schedule />
       <Faq />
+      <Workshops />
     </div>
   )
 }
