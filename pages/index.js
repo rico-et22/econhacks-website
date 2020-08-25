@@ -15,8 +15,8 @@ export default function Home(props) {
       <Header />
       <Welcome />
       <Schedule />
-      <Faq />
       <Workshops />
+      <Faq />
     </div>
   )
 }
