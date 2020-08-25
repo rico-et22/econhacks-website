@@ -45,6 +45,10 @@
   padding: .75rem 2rem;
   font-size: 1.5rem;
   cursor: pointer;
+  font-weight: 700;
+}
+.schedule_navbar_button:hover {
+  background: #ddd;
 }
 .schedule_navbar_button.active {
   background: linear-gradient(281.58deg, #0C3F84 -4.33%, rgba(12, 63, 132, 0.46) 140.46%);
