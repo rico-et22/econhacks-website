@@ -1,0 +1,27 @@
+.about_header_content {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about_header_title {
+  font-weight: 900;
+  font-size: 4rem;
+  color: #F8F8F8;
+  margin-top: 0;
+  margin-bottom: .75rem;
+  text-align: center;
+}
+.about_header_description {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 1.1875rem;
+  text-align: center;
+}
+@media (max-width: 639.98px) {
+  .about_header_title {
+    font-size: 3rem;
+  }
+}

@@ -34,7 +34,7 @@
   border-radius: .25rem;
   transition: 300ms ease-in-out;
 }
-.nav_link:hover::after {
+.nav_link:hover::after, .nav_link.active::after {
   width: 100%;
 }
 .nav_link_cta {
