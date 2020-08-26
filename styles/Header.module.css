@@ -126,3 +126,8 @@
     width: 5rem;
   }
 }
+@media (max-width: 399.98px) {
+  .nav_link_cta {
+    padding: .75rem 1rem;
+  }
+}
