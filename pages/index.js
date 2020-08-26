@@ -5,6 +5,7 @@ import Faq from '../components/Faq'
 import Schedule from '../components/Schedule'
 import Workshops from '../components/Workshops'
 import Judges from '../components/Judges'
+import Sponsors from '../components/Sponsors'
 
 export default function Home(props) {
   return (
@@ -19,6 +20,7 @@ export default function Home(props) {
       <Workshops />
       <Faq />
       <Judges />
+      <Sponsors />
     </div>
   )
 }
