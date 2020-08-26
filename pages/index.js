@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import Header from '../components/Header'
-import Welcome from '../components/Welcome'
-import Faq from '../components/Faq'
-import Schedule from '../components/Schedule'
-import Workshops from '../components/Workshops'
-import Judges from '../components/Judges'
-import Sponsors from '../components/Sponsors'
+import Header from '../components/header'
+import Welcome from '../components/welcome'
+import Faq from '../components/faq'
+import Schedule from '../components/schedule'
+import Workshops from '../components/workshops'
+import Judges from '../components/judges'
+import Sponsors from '../components/sponsors'
 
 export default function Home(props) {
   return (

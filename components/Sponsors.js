@@ -1,5 +1,5 @@
 import styles from '../styles/Sponsors.module.css'
-import Container from './Container'
+import Container from './container'
 
 export default function Sponsors(props) {
   return (

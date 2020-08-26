@@ -1,5 +1,5 @@
 import styles from '../styles/Welcome.module.css'
-import Container from './Container'
+import Container from './container'
 
 export default function Welcome(props) {
   return (

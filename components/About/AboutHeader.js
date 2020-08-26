@@ -1,8 +1,8 @@
 import styles from '../../styles/Header.module.css'
 import aboutStyles from '../../styles/About/AboutHeader.module.css'
-import Container from '../Container'
+import Container from '../container'
 import Link from 'next/link'
-import Navbar from '../Navbar'
+import Navbar from '../navbar'
 
 export default function AboutHeader(props) {
   return (

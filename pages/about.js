@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import AboutHeader from '../components/About/AboutHeader'
+import AboutHeader from '../components/About/aboutHeader'
 
 export default function About(props) {
   return (
