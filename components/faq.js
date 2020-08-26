@@ -1,5 +1,5 @@
 import styles from '../styles/Faq.module.css'
-import Container from './container'
+import Container from './Container'
 
 export default function Faq(props) {
   return (

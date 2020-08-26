@@ -1,5 +1,5 @@
 import styles from '../styles/Header.module.css'
-import Container from '../components/container'
+import Container from './Container'
 import Link from 'next/link'
 
 export default function Header(props) {

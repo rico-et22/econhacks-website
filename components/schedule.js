@@ -1,5 +1,5 @@
 import styles from '../styles/Schedule.module.css'
-import Container from '../components/container'
+import Container from './Container'
 import { useState } from 'react'
 
 export default function Schedule(props) {

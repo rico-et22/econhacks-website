@@ -1,5 +1,5 @@
 import styles from '../styles/Judges.module.css'
-import Container from '../components/container'
+import Container from './Container'
 
 export default function Judges(props) {
   return (
