@@ -1,25 +1,14 @@
 import styles from '../styles/Header.module.css'
 import Container from './Container'
 import Link from 'next/link'
+import Navbar from './Navbar'
 
 export default function Header(props) {
   return (
     <header className={styles.header}>
       <div className={styles.header_color_bg}>
         <Container>
-          <nav className={styles.nav}>
-            <Link href="/">
-              <img src="logo.png" className={styles.logo}></img>
-            </Link>
-            <div className={styles.nav_right}>
-              <a href="#" className={styles.nav_link}>
-                About
-              </a>
-              <a href="#" className={styles.nav_link_cta}>
-                Register
-              </a>
-            </div>
-          </nav>
+          <Navbar />
           <div className={styles.header_content}>
             <h1 className={styles.header_title}>EconHacks 2020</h1>
             <p className={styles.header_description}>The largest <br/> economics hackathon.</p>
