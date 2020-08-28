@@ -11,8 +11,9 @@ export default function Home(props) {
   return (
     <div>
       <Head>
-        <title>EconHacks 2020</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>EconHacks 2020 - The largest economics hackathon</title>
+        <meta name="description" content="EconHacks 2020 is a virtual hackathon that fosters hackers to solve problems in economics. Register today for 48 hours of coding, fun & learning!"/>
+        <meta name="og:description" content="EconHacks 2020 is a virtual hackathon that fosters hackers to solve problems in economics. Register today for 48 hours of coding, fun & learning!"/>
       </Head>
       <Header />
       <Welcome />
