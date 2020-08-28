@@ -6,6 +6,7 @@ import Schedule from '../components/schedule'
 import Workshops from '../components/workshops'
 import Judges from '../components/judges'
 import Sponsors from '../components/sponsors'
+import Footer from '../components/footer'
 
 export default function Home(props) {
   return (
@@ -22,6 +23,7 @@ export default function Home(props) {
       <Faq />
       <Judges />
       <Sponsors />
+      <Footer />
     </div>
   )
 }
