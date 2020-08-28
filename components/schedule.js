@@ -40,23 +40,16 @@ export default function Schedule(props) {
             <div className={styles.schedule_content_event}>
               <div className={styles.desktop}>
                 <div className={styles.schedule_content_event_time}>
-                  <p>9:00 AM</p>
+                  <p>TBA</p>
                   <div className={styles.schedule_content_event_time_dot_wrapper}>
                     <div className={styles.schedule_content_event_time_dot}/>
                   </div>
                 </div>
                 <div className={styles.schedule_content_event_info}>
-                  <h4>Event Name</h4>
+                  <h4>Schedule coming soon!</h4>
                   <div>
                     <p>
-                      Event Description <br/>
-                      Event Description <br/>
-                      Event Description <br/>
-                    </p>
-                    <p>
-                      Event Description <br/>
-                      Event Description <br/>
-                      Event Description <br/>
+                      Stay tuned for updates <br/>
                     </p>
                   </div>
                 </div>
@@ -67,96 +60,13 @@ export default function Schedule(props) {
                 </div>
                 <div className={styles.schedule_content_event_mobile_description}>
                   <div className={styles.schedule_content_event_time}>
-                    <p>9:00 AM</p>
+                    <p>TBA</p>
                   </div>
                   <div className={styles.schedule_content_event_info}>
-                    <h4>Event Name</h4>
+                    <h4>Schedule coming soon!</h4>
                     <div>
                       <p>
-                        Event Description <br/>
-                        Event Description <br/>
-                        Event Description <br/>
-                      </p>
-                      <p>
-                        Event Description <br/>
-                        Event Description <br/>
-                        Event Description <br/>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.schedule_content_event}>
-              <div className={styles.desktop}>
-                <div className={styles.schedule_content_event_time}>
-                  <p>10:00 AM</p>
-                  <div className={styles.schedule_content_event_time_dot_wrapper}>
-                    <div className={styles.schedule_content_event_time_dot}/>
-                  </div>
-                </div>
-                <div className={styles.schedule_content_event_info}>
-                  <h4>Event Name</h4>
-                </div>
-              </div>
-              <div className={styles.mobile}>
-                <div className={styles.schedule_content_event_time_dot_wrapper}>
-                  <div className={styles.schedule_content_event_time_dot}/>
-                </div>
-                <div className={styles.schedule_content_event_mobile_description}>
-                  <div className={styles.schedule_content_event_time}>
-                    <p>10:00 AM</p>
-                  </div>
-                  <div className={styles.schedule_content_event_info}>
-                    <h4>Event Name</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.schedule_content_event}>
-              <div className={styles.desktop}>
-                <div className={styles.schedule_content_event_time}>
-                  <p>12:00 AM</p>
-                  <div className={styles.schedule_content_event_time_dot_wrapper}>
-                    <div className={styles.schedule_content_event_time_dot}/>
-                  </div>
-                </div>
-                <div className={styles.schedule_content_event_info}>
-                  <h4>Event Name</h4>
-                  <div>
-                    <p>
-                      Event Description <br/>
-                      Event Description <br/>
-                      Event Description <br/>
-                    </p>
-                    <p>
-                      Event Description <br/>
-                      Event Description <br/>
-                      Event Description <br/>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.mobile}>
-                <div className={styles.schedule_content_event_time_dot_wrapper}>
-                  <div className={styles.schedule_content_event_time_dot}/>
-                </div>
-                <div className={styles.schedule_content_event_mobile_description}>
-                  <div className={styles.schedule_content_event_time}>
-                    <p>12:00 AM</p>
-                  </div>
-                  <div className={styles.schedule_content_event_info}>
-                    <h4>Event Name</h4>
-                    <div>
-                      <p>
-                        Event Description <br/>
-                        Event Description <br/>
-                        Event Description <br/>
-                      </p>
-                      <p>
-                        Event Description <br/>
-                        Event Description <br/>
-                        Event Description <br/>
+                        Stay tuned for updates <br/>
                       </p>
                     </div>
                   </div>
