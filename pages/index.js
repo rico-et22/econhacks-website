@@ -13,8 +13,8 @@ export default function Home(props) {
     <div>
       <Head>
         <title>EconHacks 2020 - The largest economics hackathon</title>
-        <meta name="description" content="EconHacks 2020 is a virtual hackathon that fosters hackers to solve problems in economics. Register today for 48 hours of coding, fun & learning!"/>
-        <meta name="og:description" content="EconHacks 2020 is a virtual hackathon that fosters hackers to solve problems in economics. Register today for 48 hours of coding, fun & learning!"/>
+        <meta name="description" content="EconHacks 2020 is a virtual hackathon that fosters hackers to solve problems in economics. Register today for 24 hours of coding, fun & learning!"/>
+        <meta name="og:description" content="EconHacks 2020 is a virtual hackathon that fosters hackers to solve problems in economics. Register today for 24 hours of coding, fun & learning!"/>
       </Head>
       <Header />
       <Welcome />

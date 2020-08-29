@@ -8,7 +8,7 @@ export default function Welcome(props) {
         <div className={styles.welcome_header}>
           <h1>Welcome to EconHacks</h1>
           <p>
-          EconHacks is a completely free 48 hours virtual hackathon that fosters hackers to solve problems in the field of economics.
+          EconHacks is a completely free 24 hours virtual hackathon that fosters hackers to solve problems in the field of economics.
           People from all over the world will gather around in the teams of 1-4 people and use code to solve some of the economic problems we are facing today, especially during this pandemic.
           </p>
         </div>
