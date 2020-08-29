@@ -4,13 +4,14 @@
   color: #aaa;
 }
 .footer_content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  text-align: center;
 }
 .footer_content a {
   transition: 200ms ease-in-out;
 }
 .footer_content a:hover {
   color: #eee;
+}
+.footer_content_photoCredits {
+  font-size: .75rem;
 }
