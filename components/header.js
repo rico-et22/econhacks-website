@@ -13,9 +13,11 @@ export default function Header(props) {
             <h1 className={styles.header_title}>EconHacks 2020</h1>
             <p className={styles.header_description}>The largest <br/> economics hackathon.</p>
             <p className={styles.header_date}>November 14 - 15th</p>
-            <a href="#" className={styles.header_cta_button}>
-              Register
-            </a>
+            <Link href="/register">
+              <a className={styles.header_cta_button}>
+                Register
+              </a>
+            </Link>
           </div>
         </Container>
       </div>

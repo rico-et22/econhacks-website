@@ -46,7 +46,7 @@
   border-radius: 50px;
   transition: 200ms ease-in-out;
 }
-.nav_link_cta:hover {
+.nav_link_cta:hover, .nav_link_cta.active {
   background: rgba(255, 255, 255, 0.4);
 }
 

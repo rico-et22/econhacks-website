@@ -13,9 +13,11 @@ export default function Navbar(props) {
         <Link href="/about">
           <a className={`${styles.nav_link} ${router.pathname === '/about' ? styles.active : ''}`}>About</a>
         </Link>
-        <a href="#" className={styles.nav_link_cta}>
-          Register
-        </a>
+        <Link href="/register">
+          <a className={`${styles.nav_link_cta} ${router.pathname === '/register' ? styles.active : ''}`}>
+            Register
+          </a>
+        </Link>
       </div>
     </nav>
   )

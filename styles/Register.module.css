@@ -1,0 +1,42 @@
+.register_iframe_container {
+  margin: -10rem auto 0 auto;
+  padding: 1rem;
+  background: #fff;
+  max-width: 720px;
+  position: relative;
+  z-index: 20;
+  border-radius: .5rem;
+}
+.register_iframe {
+  width: 100%;
+}
+.register_header_content {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.register_header_title {
+  font-weight: 900;
+  font-size: 4rem;
+  color: #F8F8F8;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.register_header_description {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 1.1875rem;
+  text-align: center;
+}
+.register_header_description.bold {
+  font-weight: 700;
+}
+@media (max-width: 639.98px) {
+  .register_header_title {
+    font-size: 2.5rem;
+  }
+}
