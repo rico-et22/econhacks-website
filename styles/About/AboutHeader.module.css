@@ -1,3 +1,6 @@
+.about_header {
+  min-height: 500px;
+}
 .about_header_content {
   margin-top: 2.5rem;
   display: flex;

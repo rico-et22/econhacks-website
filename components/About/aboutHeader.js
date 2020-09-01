@@ -5,7 +5,7 @@ import Navbar from '../navbar'
 
 export default function AboutHeader(props) {
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${aboutStyles.about_header}`}>
       <div className={styles.header_color_bg}>
         <Container>
           <Navbar />
