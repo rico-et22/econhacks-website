@@ -10,7 +10,7 @@ export default function Team(props) {
           <div className={styles.team_cards_card}>
             <img
               className={styles.team_cards_card_image}
-              src="/team-images/benji.jpg"
+              src="/team-images/Benji.jpg"
               alt="Benjamin Chen's Picture"
             />
             <div className={styles.team_cards_card_info}>
