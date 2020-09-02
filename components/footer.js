@@ -7,18 +7,32 @@ export default function Footer(props) {
     <footer className={styles.footer}>
       <Container>
         <div className={styles.footer_content}>
-          <a
-            href="https://www.instagram.com/econhacks/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Our Instagram"
-          >
-            <Icon
-              glyph="instagram"
-              size={48}
-              alt="Instagram"
-            />
-          </a>
+          <div className={styles.footer_content_links}>
+            <a
+              href="https://www.instagram.com/econhacks/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Our Instagram"
+            >
+              <Icon
+                glyph="instagram"
+                size={48}
+                alt="Instagram"
+              />
+            </a>
+            <a
+              href="mailto:info@econhacks.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Our Email"
+            >
+              <Icon
+                glyph="email"
+                size={48}
+                alt="Email"
+              />
+            </a>
+          </div>
           <p className={styles.footer_content_hackplus}>
             EconHacks 2020 is a fiscally sponsored project of&nbsp;
             <a
