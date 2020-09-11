@@ -1,6 +1,8 @@
 import '../styles/globals.css'
 import 'normalize.css'
 import Head from 'next/head'
+import Router from "next/router";
+import withGA from "next-ga";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -13,4 +15,4 @@ function MyApp({ Component, pageProps }) {
   )
 }
 
-export default MyApp
+export default withGA("UA-177850400-1", Router)(MyApp)
