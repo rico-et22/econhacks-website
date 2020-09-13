@@ -33,7 +33,7 @@ export default function Navbar(props) {
               <Link href="/about">
                 <a className={`${styles.nav_link} ${router.pathname === '/about' ? styles.active : ''}`}>About</a>
               </Link>
-              <Link href="#">
+              <Link href="/#schedule">
                 <a className={`${styles.nav_link} ${router.pathname === '/schedule' ? styles.active : ''}`}>Schedule</a>
               </Link>
               <Link href="/#faq">
@@ -68,7 +68,7 @@ export default function Navbar(props) {
               About
             </a>
           </Link>
-          <Link href="#">
+          <Link href="/#schedule">
             <a
               className={`${styles.nav_link} ${router.pathname === '/schedule' ? styles.active : ''}`}
               onClick={() => setIsMobileListOpen(!isMobileListOpen)}

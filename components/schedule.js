@@ -5,7 +5,7 @@ import { useState } from 'react'
 export default function Schedule(props) {
   const [activeTab, setActiveTab] = useState(1)
   return (
-    <header className={styles.schedule}>
+    <section className={styles.schedule} id="schedule">
       <Container>
         <div className={styles.schedule_header}>
           <h1>Schedule</h1>
@@ -76,6 +76,6 @@ export default function Schedule(props) {
           </div>
         </div>
       </Container>
-    </header>
+    </section>
   )
 }
