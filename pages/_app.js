@@ -3,6 +3,7 @@ import 'normalize.css'
 import Head from 'next/head'
 import Router from "next/router";
 import withGA from "next-ga";
+import Navbar from '../components/navbar'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -10,7 +11,10 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>EconHacks 2020 - The largest economics hackathon</title>
       </Head>
-      <Component {...pageProps} />
+      <div>
+        <Navbar/>
+        <Component {...pageProps} />
+      </div>
     </>
   )
 }

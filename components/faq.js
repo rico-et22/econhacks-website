@@ -3,7 +3,7 @@ import Container from './container'
 
 export default function Faq(props) {
   return (
-    <section className={styles.faq}>
+    <section className={styles.faq} id="faq">
       <Container>
         <h1 className={styles.faq_header}>FAQ</h1>
         <div className={styles.faq_cards}>

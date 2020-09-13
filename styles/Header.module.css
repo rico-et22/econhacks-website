@@ -11,6 +11,9 @@
   min-height: inherit;
   padding: 0 1rem;
 }
+.navbar_filler {
+  height: 146px;
+}
 .description {
   font-size: 1.25rem;
   font-style: italic;
