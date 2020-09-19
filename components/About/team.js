@@ -83,6 +83,19 @@ export default function Team(props) {
               </p>
             </div>
           </div>
+          <div className={styles.team_cards_card}>
+            <img
+              className={styles.team_cards_card_image}
+              src="/team-images/Siann.jpg"
+              alt="Siann Han's Picture"
+            />
+            <div className={styles.team_cards_card_info}>
+              <h2>Siann Han</h2>
+              <p>
+                Graphic Designer
+              </p>
+            </div>
+          </div>
         </div>
       </Container>
     </section>
