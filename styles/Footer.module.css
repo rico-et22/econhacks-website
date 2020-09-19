@@ -1,7 +1,7 @@
 .footer {
-  background: rgb(56, 60, 71);
+  background: linear-gradient(281.58deg, #0C3F84 -4.33%, rgba(124, 124, 124, 0.46) 200.46%);
+  color: #eee;
   padding: 1rem;
-  color: #aaa;
 }
 .footer_content {
   text-align: center;
@@ -10,10 +10,11 @@
   transition: 200ms ease-in-out;
 }
 .footer_content a:hover {
-  color: #eee;
+  color: #fff;
 }
 .footer_content_photoCredits {
   font-size: .75rem;
+  color: rgba(238, 238, 238, .5);
 }
 .footer_content_hackplus {
   margin-top: .7rem;
