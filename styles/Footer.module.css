@@ -18,6 +18,7 @@
 }
 .footer_content_hackplus {
   margin-top: .7rem;
+  margin-bottom: .25rem;
 }
 .footer_content_links a:not(:last-of-type) {
   margin-right: .5rem;

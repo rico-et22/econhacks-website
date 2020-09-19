@@ -44,15 +44,6 @@ export default function Footer(props) {
             </a>
             &nbsp;EIN: 81-1543325
           </p>
-          <p className={styles.footer_content_photoCredits}>Background photo by&nbsp;
-            <a
-              href="https://unsplash.com/@m_b_m"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              M. B. M.
-            </a>
-          </p>
         </div>
       </Container>
     </footer>
