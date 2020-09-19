@@ -62,40 +62,40 @@ export default function Navbar(props) {
           </div>
         </nav>
         <div className={`${styles.nav_mobile_links_wrapper} ${isMobileListOpen ? styles.open : ''}`}>
-        <div className={`${styles.nav_mobile_links} ${isMobileListOpen ? styles.open : ''}`}>
-          <Link href="/about">
-            <a
-              className={`${styles.nav_link} ${router.pathname === '/about' ? styles.active : ''}`}
-              onClick={() => setIsMobileListOpen(!isMobileListOpen)}
-            >
-              About
-            </a>
-          </Link>
-          <Link href="/#schedule">
-            <a
-              className={`${styles.nav_link} ${router.pathname === '/schedule' ? styles.active : ''}`}
-              onClick={() => setIsMobileListOpen(!isMobileListOpen)}
-            >
-              Schedule
-            </a>
-          </Link>
-          <Link href="/#faq">
-            <a
-              className={`${styles.nav_link} ${router.pathname === '/#faq' ? styles.active : ''}`}
-              onClick={() => setIsMobileListOpen(!isMobileListOpen)}
-            >
-              FAQ
-            </a>
-          </Link>
-          <Link href="/#sponsors">
-            <a
-              className={`${styles.nav_link} ${router.pathname === '/#sponsors' ? styles.active : ''}`}
-              onClick={() => setIsMobileListOpen(!isMobileListOpen)}
-            >
-              Sponsors
-            </a>
-          </Link>
-        </div>
+          <div className={`${styles.nav_mobile_links} ${isMobileListOpen ? styles.open : ''}`}>
+            <Link href="/about">
+              <a
+                className={`${styles.nav_link} ${router.pathname === '/about' ? styles.active : ''}`}
+                onClick={() => setIsMobileListOpen(!isMobileListOpen)}
+              >
+                About
+              </a>
+            </Link>
+            <Link href="/#schedule">
+              <a
+                className={`${styles.nav_link} ${router.pathname === '/schedule' ? styles.active : ''}`}
+                onClick={() => setIsMobileListOpen(!isMobileListOpen)}
+              >
+                Schedule
+              </a>
+            </Link>
+            <Link href="/#faq">
+              <a
+                className={`${styles.nav_link} ${router.pathname === '/#faq' ? styles.active : ''}`}
+                onClick={() => setIsMobileListOpen(!isMobileListOpen)}
+              >
+                FAQ
+              </a>
+            </Link>
+            <Link href="/#sponsors">
+              <a
+                className={`${styles.nav_link} ${router.pathname === '/#sponsors' ? styles.active : ''}`}
+                onClick={() => setIsMobileListOpen(!isMobileListOpen)}
+              >
+                Sponsors
+              </a>
+            </Link>
+          </div>
         </div>
       </Container>
     </div>
