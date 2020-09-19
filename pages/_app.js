@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>EconHacks 2020 - The largest economics hackathon</title>
+        <title>EconHacks 2021 - The largest economics hackathon</title>
       </Head>
       <div>
         <Navbar/>

@@ -8,7 +8,7 @@ export default function Register(props) {
   return (
     <div>
       <Head>
-        <title>Register - EconHacks 2020 - The largest economics hackathon</title>
+        <title>Register - EconHacks 2021 - The largest economics hackathon</title>
       </Head>
       <RegisterHeader/>
       <Container>

@@ -16,7 +16,7 @@ export default function Faq(props) {
           <div className={styles.faq_cards_card}>
             <h2>WHERE WILL THIS HACKATHON BE HOSTED?</h2>
             <p>
-              EconHacks 2020 will be hosted virtually on Discord. <br/>
+              EconHacks 2021 will be hosted virtually on Discord. <br/>
               More details to be announced!
             </p>
           </div>

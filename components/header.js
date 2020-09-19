@@ -9,9 +9,9 @@ export default function Header(props) {
         <Container>
           <div className={styles.navbar_filler}/>
           <div className={styles.header_content}>
-            <h1 className={styles.header_title}>EconHacks 2020</h1>
+            <h1 className={styles.header_title}>EconHacks 2021</h1>
             <p className={styles.header_description}>The largest <br/> economics hackathon.</p>
-            <p className={styles.header_date}>November 14 - 15th</p>
+            <p className={styles.header_date}>February 13 - 14th</p>
             <Link href="/register">
               <a className={styles.header_cta_button}>
                 Register

@@ -9,7 +9,7 @@ export default function AboutHeader(props) {
         <Container>
           <div className={styles.navbar_filler}/>
           <div className={aboutStyles.about_header_content}>
-            <h1 className={aboutStyles.about_header_title}>EconHacks 2020</h1>
+            <h1 className={aboutStyles.about_header_title}>EconHacks 2021</h1>
             <p className={aboutStyles.about_header_description}>About</p>
           </div>
         </Container>

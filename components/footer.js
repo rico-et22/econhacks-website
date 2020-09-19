@@ -34,7 +34,7 @@ export default function Footer(props) {
             </a>
           </div>
           <p className={styles.footer_content_hackplus}>
-            EconHacks 2020 is a fiscally sponsored project of&nbsp;
+            EconHacks 2021 is a fiscally sponsored project of&nbsp;
             <a
               href="https://hackplus.io"
               target="_blank"

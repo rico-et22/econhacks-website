@@ -36,7 +36,7 @@ export default function Schedule(props) {
             </button>
           </div>
           <div className={styles.schedule_content}>
-            <h3>November 14th</h3>
+            <h3>February 13th</h3>
             <div className={styles.schedule_content_event}>
               <div className={styles.desktop}>
                 <div className={styles.schedule_content_event_time}>
