@@ -1,6 +1,7 @@
 import styles from '../styles/Header.module.css'
 import Container from './container'
 import Link from 'next/link'
+import CTAButton from './cta-button'
 
 export default function Header(props) {
   return (
@@ -12,10 +13,10 @@ export default function Header(props) {
             <h1 className={styles.header_title}>EconHacks 2021</h1>
             <p className={styles.header_description}>The largest <br/> economics hackathon.</p>
             <p className={styles.header_date}>February 13 - 14th</p>
-            <Link href="/register">
-              <a className={styles.header_cta_button}>
+            <Link href="/register" passHref>
+              <CTAButton>
                 Register
-              </a>
+              </CTAButton>
             </Link>
           </div>
         </Container>

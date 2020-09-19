@@ -1,0 +1,19 @@
+.cta_button {
+  background: linear-gradient(90deg, #D2C060 -10.29%, #C0B88F 128.68%);/*#60b5bd*//*96ad51*//*5aa6ad*//*ADA35A*//*ada251*//*423110*/
+  border-radius: 15px;
+  color: #fff;
+  padding: .625rem 2.75rem;
+  display: inline-block;
+  font-size: 1.75rem;
+  font-weight: bold;
+  align-self: start;
+  transition: 200ms ease-in-out;
+}
+.cta_button.small_font {
+  font-size: 1.5rem;
+  padding: .65rem 2.25rem;
+}
+.cta_button:hover {
+  box-shadow: 0px 6.4px 14.4px rgba(0, 0, 0, 0.132), 0px 1.2px 3.6px rgba(0, 0, 0, 0.108);
+  transform: scale(1.05);
+}

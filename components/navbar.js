@@ -11,7 +11,7 @@ export default function Navbar(props) {
   const [isMobileListOpen, setIsMobileListOpen] = useState(false)
   const handleScroll=() => {
     const offset=window.scrollY;
-    if(offset > 16 ){
+    if (offset > 16){
       setIsSticky(true);
     }
     else{
@@ -38,6 +38,9 @@ export default function Navbar(props) {
               </Link>
               <Link href="/#faq">
                 <a className={`${styles.nav_link} ${router.pathname === '/#faq' ? styles.active : ''}`}>FAQ</a>
+              </Link>
+              <Link href="/#sponsors">
+                <a className={`${styles.nav_link} ${router.pathname === '/#sponsors' ? styles.active : ''}`}>Sponsors</a>
               </Link>
             </div>
             <Link href="/register">
@@ -82,6 +85,14 @@ export default function Navbar(props) {
               onClick={() => setIsMobileListOpen(!isMobileListOpen)}
             >
               FAQ
+            </a>
+          </Link>
+          <Link href="/#sponsors">
+            <a
+              className={`${styles.nav_link} ${router.pathname === '/#sponsors' ? styles.active : ''}`}
+              onClick={() => setIsMobileListOpen(!isMobileListOpen)}
+            >
+              Sponsors
             </a>
           </Link>
         </div>

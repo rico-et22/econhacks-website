@@ -6,7 +6,8 @@ export default function Judges(props) {
     <section className={styles.judges}>
       <Container>
         <h1 className={styles.judges_header}>Judges</h1>
-        <div className={styles.judges_grid}>
+        <p style={{textAlign: 'center'}}>To be announced!</p>
+        {/*(<div className={styles.judges_grid}>
           <div className={styles.judges_grid_item}>
             <div className={styles.judges_grid_item_photo}/>
             <h3>Judge Name</h3>
@@ -23,7 +24,7 @@ export default function Judges(props) {
             <div className={styles.judges_grid_item_photo}/>
             <h3>Judge Name</h3>
           </div>
-        </div>
+        </div>)*/}
       </Container>
     </section>
   )
