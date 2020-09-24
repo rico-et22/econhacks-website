@@ -92,6 +92,7 @@
 }
 .nav_mobile_links {
   display: flex;
+  margin-left: auto;
 }
 
 @media (max-width: 991.98px) {
