@@ -73,9 +73,10 @@ export default function Team(props) {
           </div>
           <div className={styles.team_cards_card}>
             <div className={styles.team_cards_card_image_wrapper}>
-              <div
+              <img
                 className={styles.team_cards_card_image}
-                style={{backgroundColor: '#C4C4C4'}}
+                src="/team-images/trfee.jpg"
+                alt="Trfee Dsc's Picture"
               />
               <TeamPhotoFlag country="India" />
             </div>
