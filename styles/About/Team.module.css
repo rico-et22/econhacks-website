@@ -43,6 +43,9 @@
   color: #787878;
   margin: 0;
 }
+.team_cards_card_image_wrapper {
+  position: relative;
+}
 .team_cards_card_image {
   height: 6.25rem;
   width: 6.25rem;
@@ -74,6 +77,8 @@
   }
   .team_cards_card_image {
     margin-right: 0;
+  }
+  .team_cards_card_image_wrapper {
     margin-bottom: 1rem;
   }
 }
