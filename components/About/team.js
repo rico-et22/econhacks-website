@@ -75,13 +75,13 @@ export default function Team(props) {
             <div className={styles.team_cards_card_image_wrapper}>
               <img
                 className={styles.team_cards_card_image}
-                src="/team-images/trfee.jpg"
-                alt="Trfee Dsc's Picture"
+                src="/team-images/biswajeet.jpg"
+                alt="Biswajeet Kar's Picture"
               />
               <TeamPhotoFlag country="India" />
             </div>
             <div className={styles.team_cards_card_info}>
-              <h2>Trfee Dsc</h2>
+              <h2>Biswajeet Kar</h2>
               <p>
                 Sponsorships Director
               </p>
@@ -116,6 +116,70 @@ export default function Team(props) {
               <h2>Siann Han</h2>
               <p>
                 Graphic Designer
+              </p>
+            </div>
+          </div>
+          <div className={styles.team_cards_card}>
+            <div className={styles.team_cards_card_image_wrapper}>
+              <img
+                className={styles.team_cards_card_image}
+                src="/team-images/marissa.jpg"
+                alt="Marissa Chow's Picture"
+              />
+              <TeamPhotoFlag country="Hong Kong" />
+            </div>
+            <div className={styles.team_cards_card_info}>
+              <h2>Marissa Chow</h2>
+              <p>
+                Logistics
+              </p>
+            </div>
+          </div>
+          <div className={styles.team_cards_card}>
+            <div className={styles.team_cards_card_image_wrapper}>
+              <img
+                className={styles.team_cards_card_image}
+                src="/team-images/janaki.jpg"
+                alt="Janaki Kapadia's Picture"
+              />
+              <TeamPhotoFlag country="USA" />
+            </div>
+            <div className={styles.team_cards_card_info}>
+              <h2>Janaki Kapadia</h2>
+              <p>
+                Logistics
+              </p>
+            </div>
+          </div>
+          <div className={styles.team_cards_card}>
+            <div className={styles.team_cards_card_image_wrapper}>
+              <img
+                className={styles.team_cards_card_image}
+                src="/team-images/aditya.jpg"
+                alt="Aditya Tiwari's Picture"
+              />
+              <TeamPhotoFlag country="USA" />
+            </div>
+            <div className={styles.team_cards_card_info}>
+              <h2>Aditya Tiwari</h2>
+              <p>
+                Tech
+              </p>
+            </div>
+          </div>
+          <div className={styles.team_cards_card}>
+            <div className={styles.team_cards_card_image_wrapper}>
+              <img
+                className={styles.team_cards_card_image}
+                src="/team-images/christine.jpg"
+                alt="Christine Kabiru's Picture"
+              />
+              <TeamPhotoFlag country="Kenya" />
+            </div>
+            <div className={styles.team_cards_card_info}>
+              <h2>Christine Kabiru</h2>
+              <p>
+                Ambassador
               </p>
             </div>
           </div>

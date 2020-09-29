@@ -19,6 +19,14 @@ export default function TeamPhotoFlag(props) {
       name: 'Taiwan',
       imageFileName: 'taiwan'
     },
+    {
+      name: 'Hong Kong',
+      imageFileName: 'hong-kong'
+    },
+    {
+      name: 'Kenya',
+      imageFileName: 'kenya'
+    }
   ]
 
   const getCountry = (countryName) => {
