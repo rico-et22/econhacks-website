@@ -139,7 +139,7 @@ export default function Team(props) {
             <div className={styles.team_cards_card_image_wrapper}>
               <img
                 className={styles.team_cards_card_image}
-                src="/team-images/janaki.jpg"
+                src="/team-images/Janaki.jpg"
                 alt="Janaki Kapadia's Picture"
               />
               <TeamPhotoFlag country="USA" />
