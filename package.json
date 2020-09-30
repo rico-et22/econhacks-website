@@ -8,11 +8,18 @@
     "start": "next start"
   },
   "dependencies": {
+    "@apollo/client": "^3.2.1",
     "@hackclub/icons": "0.0.3",
+    "graphql": "^15.3.0",
     "next": "9.5.2",
     "next-ga": "^2.3.4",
     "normalize.css": "^8.0.1",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "react-svg-loader": "^3.0.3"
   }
 }

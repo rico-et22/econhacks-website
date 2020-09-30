@@ -3,8 +3,10 @@ import AboutHeader from '../components/About/aboutHeader'
 import Themes from '../components/About/themes'
 import Team from '../components/About/team'
 import Footer from '../components/footer'
+import { initializeApollo } from '../lib/apolloClient'
+import { gql } from '@apollo/client'
 
-export default function About(props) {
+export function About(props) {
   return (
     <div>
       <Head>
@@ -12,8 +14,36 @@ export default function About(props) {
       </Head>
       <AboutHeader />
       <Themes />
-      <Team />
+      <Team teamMembers={props.teamMembers}/>
       <Footer />
     </div>
   )
 }
+
+export async function getStaticProps() {
+  const apolloClient = initializeApollo()
+
+  await apolloClient.query({
+    query: gql`
+      {
+        teamMembers {
+          name
+          photo {
+            url
+          }
+          country
+          linkedInLink
+          role
+        }
+      }
+    `,
+  })
+
+  return {
+    props: {
+      teamMembers: apolloClient.cache.extract().ROOT_QUERY.teamMembers,
+    }
+  }
+}
+
+export default About
