@@ -1,0 +1,13 @@
+.sponsor_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.5rem -1rem;
+}
+
+.sponsor_list_item {
+  margin: 1rem;
+}
+
+.sponsor_list_item_logo {
+  max-height: 4rem;
+}

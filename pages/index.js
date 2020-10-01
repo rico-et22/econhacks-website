@@ -7,8 +7,10 @@ import Workshops from '../components/workshops'
 import Judges from '../components/judges'
 import Sponsors from '../components/sponsors'
 import Footer from '../components/footer'
+import { initializeApollo } from '../lib/apolloClient'
+import { gql } from '@apollo/client'
 
-export default function Home(props) {
+export function Home(props) {
   return (
     <div>
       <Head>
@@ -22,8 +24,35 @@ export default function Home(props) {
       <Workshops />
       <Faq />
       <Judges />
-      <Sponsors />
+      <Sponsors sponsors={props.sponsors} />
       <Footer />
     </div>
   )
 }
+
+export async function getStaticProps() {
+  const apolloClient = initializeApollo()
+
+  await apolloClient.query({
+    query: gql`
+      {
+        sponsors {
+          name
+          logo {
+            url
+          }
+          logoSize
+          website
+        }
+      }
+    `,
+  })
+
+  return {
+    props: {
+      sponsors: apolloClient.cache.extract().ROOT_QUERY.sponsors,
+    }
+  }
+}
+
+export default Home
