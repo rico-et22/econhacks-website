@@ -26,7 +26,7 @@ export default function Navbar(props) {
       <Container>
         <nav className={styles.nav}>
           <Link href="/">
-            <img src="logo.jpg" className={styles.logo}></img>
+            <img src="/logo.jpg" className={styles.logo}></img>
           </Link>
           <div className={styles.nav_right}>
             <div className={styles.desktop_only}>

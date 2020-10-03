@@ -3,8 +3,18 @@
   color: #eee;
   padding: 1rem;
 }
+.footer_logo {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 15px;
+}
 .footer_content {
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.footer_content > div {
+  padding: 0 1rem;
 }
 .footer_content a {
   transition: 200ms ease-in-out;
@@ -16,10 +26,10 @@
   font-size: .75rem;
   color: rgba(238, 238, 238, .5);
 }
-.footer_content_hackplus {
-  margin-top: .7rem;
-  margin-bottom: .25rem;
+.footer_content_paragraph {
+  margin: .7rem 0;
 }
 .footer_content_links a:not(:last-of-type) {
   margin-right: .5rem;
 }
+
