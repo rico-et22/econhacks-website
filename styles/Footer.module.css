@@ -7,14 +7,13 @@
   height: 6rem;
   width: 6rem;
   border-radius: 15px;
+  margin-bottom: .5rem;
 }
 .footer_content {
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-}
-.footer_content > div {
-  padding: 0 1rem;
 }
 .footer_content a {
   transition: 200ms ease-in-out;
