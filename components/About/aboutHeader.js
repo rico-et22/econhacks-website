@@ -1,10 +1,16 @@
 import styles from '../../styles/Header.module.css'
 import aboutStyles from '../../styles/About/AboutHeader.module.css'
 import Container from '../container'
+import { Parallax } from 'react-parallax'
 
 export default function AboutHeader(props) {
   return (
-    <header className={`${styles.header} ${aboutStyles.about_header}`}>
+    <Parallax
+      bgImage='/bkg2.jpg'
+      bgImageAlt="background"
+      contentClassName={`${styles.header} ${aboutStyles.about_header}`}
+      strength={300}
+    >
       <div className={styles.header_color_bg}>
         <Container>
           <div className={styles.navbar_filler}/>
@@ -14,6 +20,6 @@ export default function AboutHeader(props) {
           </div>
         </Container>
       </div>
-    </header>
+    </Parallax>
   )
 }

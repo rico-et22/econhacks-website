@@ -2,10 +2,16 @@ import styles from '../styles/Header.module.css'
 import Container from './container'
 import Link from 'next/link'
 import CTAButton from './cta-button'
+import { Parallax } from 'react-parallax'
 
 export default function Header(props) {
   return (
-    <header className={styles.header}>
+    <Parallax
+      bgImage='/bkg2.jpg'
+      bgImageAlt="background"
+      contentClassName={styles.header}
+      strength={300}
+    >
       <div className={styles.header_color_bg}>
         <Container>
           <div className={styles.navbar_filler}/>
@@ -21,6 +27,6 @@ export default function Header(props) {
           </div>
         </Container>
       </div>
-    </header>
+    </Parallax>
   )
 }
