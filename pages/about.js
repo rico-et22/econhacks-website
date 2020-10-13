@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import AboutHeader from '../components/About/aboutHeader'
-import Themes from '../components/About/themes'
 import Team from '../components/About/team'
 import Footer from '../components/footer'
 import { initializeApollo } from '../lib/apolloClient'
@@ -13,7 +12,6 @@ export function About(props) {
         <title>About - EconHacks 2021 - The largest economics hackathon</title>
       </Head>
       <AboutHeader />
-      <Themes />
       <Team teamMembers={props.teamMembers}/>
       <Footer />
     </div>

@@ -7,6 +7,7 @@ import Workshops from '../components/workshops'
 import Judges from '../components/judges'
 import Sponsors from '../components/sponsors'
 import Footer from '../components/footer'
+import Themes from '../components/About/themes'
 import { initializeApollo } from '../lib/apolloClient'
 import { gql } from '@apollo/client'
 
@@ -21,6 +22,7 @@ export function Home(props) {
       <Header />
       <Welcome />
       <Schedule />
+      <Themes />
       <Workshops />
       <Faq />
       <Judges />
