@@ -11,6 +11,7 @@
 .sponsor_list_item {
   margin: 1rem;
   display: flex;
+  align-items: center;
 }
 
 .sponsor_list_item_logo {
