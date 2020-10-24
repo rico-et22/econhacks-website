@@ -5,7 +5,7 @@ export default function Workshops(props) {
   return (
     <section className={styles.workshops}>
       <Container>
-        <h1 className={styles.workshops_header}>Workshops</h1>
+        <h1 className={styles.workshops_header}>Speaker Series</h1>
         <div className={styles.workshops_grid}>
           <div className={styles.workshops_grid_item}>To be announced!</div>
           <div className={styles.workshops_grid_item}>To be announced!</div>
