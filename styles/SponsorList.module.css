@@ -4,6 +4,10 @@
   margin: 1.5rem -1rem;
 }
 
+.sponsor_list_additional_header {
+  margin-bottom: 0;
+}
+
 .sponsor_list_additional {
   margin-top: 0;
 }

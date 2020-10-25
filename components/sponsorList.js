@@ -30,7 +30,7 @@ export default function SponsorList(props) {
       }
       { additionalSupport.length > 0 &&
         <div>
-          <h3>Additional support</h3>
+          <h3 className={styles.sponsor_list_additional_header}>Additional support from:</h3>
           <div className={`${styles.sponsor_list} ${styles.sponsor_list_additional}`}>
             {additionalSupport.map((sponsor, index) => {
               return (
