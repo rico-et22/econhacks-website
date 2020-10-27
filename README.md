@@ -1,4 +1,4 @@
-![EconHacks logo](econhacks-logo.jpg)
+![EconHacks logo](econhacks-logo.png)
 
 ## EconHacks 2021 Official Website
 
