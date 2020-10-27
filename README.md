@@ -1,6 +1,14 @@
 ![EconHacks logo](econhacks-logo.png)
 
 ## EconHacks 2021 Official Website
+[https://econhacks.org](https://econhacks.org)
+
+## Technologies Used
+- React
+- Next.js
+- GraphCMS
+- Apollo GraphQL client
+- Deployed on Vercel
 
 ## Getting Started
 
