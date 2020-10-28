@@ -1,0 +1,44 @@
+.sponsor_list_tier {
+  display: flex;
+  flex-wrap: wrap;
+  margin: .25rem -1rem;
+}
+
+.sponsor_list_tier_header {
+  margin-bottom: 0;
+}
+.sponsor_list_tier_header.l {
+  font-size: 1.75rem;
+}
+.sponsor_list_tier_header.m {
+  font-size: 1.5rem;
+}
+.sponsor_list_tier_header.s {
+  font-size: 1.25rem;
+}
+.sponsor_list_tier_header.xs, .sponsor_list_tier_header.additionalSupport {
+  font-size: 1rem;
+}
+
+.sponsor_list_tier_item {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.sponsor_list_tier_item_logo {
+  transition: 100ms ease-in-out;
+  display: block;
+}
+.sponsor_list_tier_item_logo.l {
+  max-height: 5rem;
+}
+.sponsor_list_tier_item_logo.m {
+  max-height: 4rem;
+}
+.sponsor_list_tier_item_logo.s {
+  max-height: 3rem;
+}
+.sponsor_list_tier_item_logo.xs, .sponsor_list_tier_item_logo.additionalSupport {
+  max-height: 2rem;
+}
