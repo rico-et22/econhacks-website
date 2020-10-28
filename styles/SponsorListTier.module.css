@@ -29,6 +29,7 @@
 .sponsor_list_tier_item_logo {
   transition: 100ms ease-in-out;
   display: block;
+  max-width: 100%;
 }
 .sponsor_list_tier_item_logo.l {
   max-height: 5rem;
