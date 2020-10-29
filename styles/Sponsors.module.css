@@ -13,6 +13,7 @@
 }
 .sponsors_row {
   display: flex;
+  margin-top: 2rem;
 }
 .sponsors_row div {
   display: flex;
