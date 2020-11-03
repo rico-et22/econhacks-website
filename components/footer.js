@@ -1,6 +1,8 @@
 import Container from './container'
 import styles from '../styles/Footer.module.css'
 import Icon from '@hackclub/icons'
+import LinkedInIcon from '../public/icons/linkedin.svg'
+import RedditIcon from '../public/icons/reddit.svg'
 
 export default function Footer(props) {
   const getCopyrightYear = (year) => {
@@ -61,6 +63,30 @@ export default function Footer(props) {
                   glyph="email"
                   size={48}
                   alt="Email"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/econhacks"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Our LinkedIn"
+              >
+                <LinkedInIcon
+                  width={48}
+                  height={48}
+                  alt="LinkedIn"
+                />
+              </a>
+              <a
+                href="https://www.reddit.com/user/EconHacks/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Our Reddit"
+              >
+                <RedditIcon
+                  width={48}
+                  height={48}
+                  alt="Reddit"
                 />
               </a>
             </div>
