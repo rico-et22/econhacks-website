@@ -16,7 +16,7 @@ export default function Welcome(props) {
           <div className={styles.welcome_cards_card}>
             <h2>Beginner Friendly</h2>
             <p>
-              All middle and high school students are welcomed! <br/> We have various workshops to enhance participant’s skills and assist them throughout the hackathon
+              All middle and high school students are welcomed! <br/> We have various videolists that will be distributed in our chat to enhance participants' skills and assist them throughout the hackathon
             </p>
           </div>
           <div className={styles.welcome_cards_card}>
@@ -28,7 +28,7 @@ export default function Welcome(props) {
           <div className={styles.welcome_cards_card}>
             <h2>Win prizes</h2>
             <p>
-              Earn the rewarded for your hard work and get support from our sponsors to continue grow your project after this hackathon! 
+              Earn the reward for your hard work and get support from our sponsors to continue grow your project after this hackathon! 
             </p>
           </div>
           <div className={styles.welcome_cards_card}>
