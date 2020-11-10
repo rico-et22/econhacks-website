@@ -16,7 +16,6 @@ export default function Register(props) {
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSem0ULqwF5DPLYBdasMOuNGH9Jw0aCTzkXdNkaBA8qi1465AA/viewform?embedded=true"
             className={styles.register_iframe}
-            height="2638"
             frameborder="0"
             marginheight="0"
             marginwidth="0"
