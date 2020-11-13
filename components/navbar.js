@@ -43,11 +43,14 @@ export default function Navbar(props) {
                 <a className={`${styles.nav_link} ${router.pathname === '/#sponsors' ? styles.active : ''}`}>Sponsors</a>
               </Link>
             </div>
-            <Link href="/register">
-              <a className={`${styles.nav_link_cta} ${router.pathname === '/register' ? styles.active : ''}`}>
-                Register
-              </a>
-            </Link>
+            <a
+              href="https://forms.gle/LTJTwLmYxfrETkjE8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${styles.nav_link_cta} ${router.pathname === '/register' ? styles.active : ''}`}
+            >
+              Register
+            </a>
             <button
               className={styles.nav_mobile_menu_button}
               onClick={() => setIsMobileListOpen(!isMobileListOpen)}
