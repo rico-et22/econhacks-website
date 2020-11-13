@@ -42,6 +42,18 @@ export default function Footer(props) {
             </p>
             <div className={styles.footer_content_links}>
               <a
+                href="https://www.facebook.com/econ.hacks/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Our Facebook"
+              >
+                <Icon
+                  glyph="facebook"
+                  size={48}
+                  alt="Facebook"
+                />
+              </a>
+              <a
                 href="https://www.instagram.com/econhacks/"
                 target="_blank"
                 rel="noopener noreferrer"
