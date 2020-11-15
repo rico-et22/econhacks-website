@@ -3,7 +3,7 @@ import Header from '../components/header'
 import Welcome from '../components/welcome'
 import Faq from '../components/faq'
 import Schedule from '../components/schedule'
-import Workshops from '../components/workshops'
+import SpeakerSeries from '../components/speakerSeries'
 import Judges from '../components/judges'
 import Sponsors from '../components/sponsors'
 import Footer from '../components/footer'
@@ -23,7 +23,7 @@ export function Home(props) {
       <Welcome />
       <Schedule />
       <Themes />
-      <Workshops />
+      <SpeakerSeries speakers={props.speakerSeriesItems} />
       <Faq />
       <Judges />
       <Sponsors sponsors={props.sponsors} />
@@ -46,6 +46,16 @@ export async function getStaticProps() {
           logoSize
           website
         }
+        speakerSeriesItems {
+          title
+          description
+          photo {
+            url
+          }
+          logo {
+            url
+          }
+        }
       }
     `,
   })
@@ -53,6 +63,7 @@ export async function getStaticProps() {
   return {
     props: {
       sponsors: apolloClient.cache.extract().ROOT_QUERY.sponsors,
+      speakerSeriesItems: apolloClient.cache.extract().ROOT_QUERY.speakerSeriesItems
     }
   }
 }

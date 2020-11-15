@@ -1,0 +1,46 @@
+.speaker_card_wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.speaker_card {
+  box-shadow: 0px 3.2px 7.2px rgba(0, 0, 0, 0.132), 0px 0.6px 1.8px rgba(0, 0, 0, 0.108);
+  width: 100%;
+  max-width: 18rem;
+  border-radius: 1rem;
+  margin: 0 1rem;
+  height: 100%;
+}
+.speaker_card_image {
+  display: block;
+  width: 100%;
+  border-radius: 1rem;
+  max-height: 11.070625rem;
+  object-fit: cover;
+}
+.speaker_card_description {
+  padding: 1.5rem;
+  position: relative;
+}
+.speaker_card_description h1 {
+  margin-top: 0;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+.speaker_card_description p {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 153.52%;
+  font-size: .8rem;
+}
+.speaker_card_logo {
+  position: absolute;
+  height: 4rem;
+  width: 4rem;
+  top: -2.5rem;
+  right: 1.5rem;
+  padding: .25rem;
+  background: #fff;
+  border-radius: 100%;
+  border: 1px solid #333;
+}

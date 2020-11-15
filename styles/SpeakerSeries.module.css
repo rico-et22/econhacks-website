@@ -1,0 +1,19 @@
+.speaker_series {
+  padding: 3rem 1rem;
+}
+.speaker_series_header {
+  background: linear-gradient(281.58deg, #0C3F84 -4.33%, rgba(12, 63, 132, 0.46) 140.46%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  font-size: 3rem;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+.speaker_series_cards {
+  display: flex;
+  overflow: auto;
+  padding: 0 0 1rem 0;
+  margin: 0 -1rem;
+}
