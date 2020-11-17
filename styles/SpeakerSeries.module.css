@@ -14,6 +14,6 @@
 .speaker_series_cards {
   display: flex;
   overflow: auto;
-  padding: 0 0 1rem 0;
-  margin: 0 -1rem;
+  padding: 1rem 0 2rem 0;
+  margin: -1rem;
 }
