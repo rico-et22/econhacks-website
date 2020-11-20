@@ -3,8 +3,7 @@ import Header from '../components/header'
 import Welcome from '../components/welcome'
 import Faq from '../components/faq'
 import Schedule from '../components/schedule'
-import SpeakerSeries from '../components/speakerSeries'
-import Judges from '../components/judges'
+import SpeakersAndJudges from '../components/speakersAndJudges'
 import Sponsors from '../components/sponsors'
 import Footer from '../components/footer'
 import Themes from '../components/About/themes'
@@ -23,9 +22,8 @@ export function Home(props) {
       <Welcome />
       <Schedule />
       <Themes />
-      <SpeakerSeries speakers={props.speakerSeriesItems} />
+      <SpeakersAndJudges speakers={props.speakersAndJudgesItems} />
       <Faq />
-      <Judges />
       <Sponsors sponsors={props.sponsors} />
       <Footer />
     </div>
@@ -63,7 +61,7 @@ export async function getStaticProps() {
   return {
     props: {
       sponsors: apolloClient.cache.extract().ROOT_QUERY.sponsors,
-      speakerSeriesItems: apolloClient.cache.extract().ROOT_QUERY.speakerSeriesItems
+      speakersAndJudgesItems: apolloClient.cache.extract().ROOT_QUERY.speakerSeriesItems
     }
   }
 }

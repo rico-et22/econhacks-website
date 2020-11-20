@@ -1,7 +1,7 @@
-.speaker_series {
+.speakers_judges {
   padding: 3rem 1rem;
 }
-.speaker_series_header {
+.speakers_judges_header {
   background: linear-gradient(281.58deg, #0C3F84 -4.33%, rgba(12, 63, 132, 0.46) 140.46%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -11,7 +11,7 @@
   margin: 0;
   margin-bottom: 1.5rem;
 }
-.speaker_series_cards {
+.speakers_judges_cards {
   display: flex;
   overflow: auto;
   padding: 1rem 0 2rem 0;
