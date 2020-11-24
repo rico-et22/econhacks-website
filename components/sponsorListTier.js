@@ -4,7 +4,6 @@ export default function SponsorList(props) {
   const {sponsors, logoSize, title} = props
   return (
     <>
-      <h3 className={`${styles.sponsor_list_tier_header} ${styles[logoSize]}`}>{title}</h3>
       { sponsors.length > 0 &&
         <div className={styles.sponsor_list_tier}>
           {sponsors.map((sponsor, index) => {

@@ -4,22 +4,6 @@
   margin: .25rem -1rem;
 }
 
-.sponsor_list_tier_header {
-  margin-bottom: 0;
-}
-.sponsor_list_tier_header.l {
-  font-size: 1.75rem;
-}
-.sponsor_list_tier_header.m {
-  font-size: 1.5rem;
-}
-.sponsor_list_tier_header.s {
-  font-size: 1.25rem;
-}
-.sponsor_list_tier_header.xs, .sponsor_list_tier_header.additionalSupport {
-  font-size: 1rem;
-}
-
 .sponsor_list_tier_item {
   margin: 1rem;
   display: flex;
