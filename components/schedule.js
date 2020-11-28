@@ -1,9 +1,11 @@
 import styles from '../styles/Schedule.module.css'
 import Container from './container'
+import ScheduleEvent from './scheduleEvent'
 import { useState } from 'react'
 
 export default function Schedule(props) {
   const [activeTab, setActiveTab] = useState(1)
+  const {scheduleDays} = props
   return (
     <section className={styles.schedule} id="schedule">
       <Container>
@@ -35,45 +37,21 @@ export default function Schedule(props) {
               Day 2
             </button>
           </div>
-          <div className={styles.schedule_content}>
-            <h3>February 13th</h3>
-            <div className={styles.schedule_content_event}>
-              <div className={styles.desktop}>
-                <div className={styles.schedule_content_event_time}>
-                  <p>TBA</p>
-                  <div className={styles.schedule_content_event_time_dot_wrapper}>
-                    <div className={styles.schedule_content_event_time_dot}/>
-                  </div>
-                </div>
-                <div className={styles.schedule_content_event_info}>
-                  <h4>Schedule coming soon!</h4>
-                  <div>
-                    <p>
-                      Stay tuned for updates <br/>
-                    </p>
-                  </div>
-                </div>
+          {
+            scheduleDays[activeTab - 1] && scheduleDays[activeTab - 1].scheduleEvents.length > 0 ? (
+              <div className={styles.schedule_content}>
+                <h3>{scheduleDays[activeTab - 1].date}</h3>
+                {scheduleDays[activeTab - 1].scheduleEvents.map((scheduleEvent, index) => {
+                  return <ScheduleEvent eventData={scheduleEvent} key={index}/>
+                })}
               </div>
-              <div className={styles.mobile}>
-                <div className={styles.schedule_content_event_time_dot_wrapper}>
-                  <div className={styles.schedule_content_event_time_dot}/>
-                </div>
-                <div className={styles.schedule_content_event_mobile_description}>
-                  <div className={styles.schedule_content_event_time}>
-                    <p>TBA</p>
-                  </div>
-                  <div className={styles.schedule_content_event_info}>
-                    <h4>Schedule coming soon!</h4>
-                    <div>
-                      <p>
-                        Stay tuned for updates <br/>
-                      </p>
-                    </div>
-                  </div>
-                </div>
+            ) : (
+              <div className={styles.schedule_content}>
+                {scheduleDays[activeTab - 1] && scheduleDays[activeTab - 1].date && <h3>{scheduleDays[activeTab - 1].date}</h3>}
+                <ScheduleEvent isTba/>
               </div>
-            </div>
-          </div>
+            )
+          }
         </div>
       </Container>
     </section>

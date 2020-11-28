@@ -20,7 +20,7 @@ export function Home(props) {
       </Head>
       <Header />
       <Welcome />
-      <Schedule />
+      <Schedule scheduleDays={props.scheduleDays}/>
       <Themes />
       <SpeakersAndJudges speakers={props.speakersAndJudgesItems} />
       <Faq />
@@ -54,6 +54,18 @@ export async function getStaticProps() {
             url
           }
         }
+        scheduleDays {
+          scheduleEvents {
+            title
+            description
+            image {
+              url
+            }
+            dateTimeUtc
+          }
+          date
+          dayNumber
+        }
       }
     `,
   })
@@ -61,7 +73,8 @@ export async function getStaticProps() {
   return {
     props: {
       sponsors: apolloClient.cache.extract().ROOT_QUERY.sponsors,
-      speakersAndJudgesItems: apolloClient.cache.extract().ROOT_QUERY.speakerSeriesItems
+      speakersAndJudgesItems: apolloClient.cache.extract().ROOT_QUERY.speakerSeriesItems,
+      scheduleDays: apolloClient.cache.extract().ROOT_QUERY.scheduleDays
     }
   }
 }
