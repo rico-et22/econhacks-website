@@ -20,7 +20,7 @@ export default function Header(props) {
             <p className={styles.header_description}>The largest <br/> economics hackathon.</p>
             <p className={styles.header_date}>February 13 - 14th</p>
             <CTAButton
-              href="https://econhack.devpost.com/"
+              href="https://econhacks-2021.devpost.com/"
               openInNewTab
             >
               Register
