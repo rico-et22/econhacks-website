@@ -34,24 +34,36 @@
   box-shadow: 0px 6.4px 14.4px rgba(0, 0, 0, 0.132), 0px 1.2px 3.6px rgba(0, 0, 0, 0.108);
   transform: scale(1.02);
 }
-@media (max-width: 767.98px) {
-  .impact_cards {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .impact_cards_card {
-    height: 100%;
-  }
-}
+
 @media (max-width: 639.98px) {
+  .impact_cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .impact_cards_card {
-    width: 100%;
-    max-width: 34rem;
-    margin: auto;
-    padding: .5rem;
-    height: auto;
-    min-height: 15rem;
+    align-self: center;
+    max-width: 40%;
+  }
+  /* Safari gap hack until it gets support for flex gap */
+  @media not all and (min-resolution:.001dpcm) {
+    .impact_cards_card {
+      margin-bottom: 2rem;
+    }
   }
 }
+
+
+@media (max-width: 531.98px) {
+  .impact_cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .impact_cards_card {
+    align-self: center;
+    max-width: 100%;
+  }
+}
+
 .impact_cards_card h2 {
   text-align: center;
   font-weight: 700;
