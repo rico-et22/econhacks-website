@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from '../components/header'
 import Welcome from '../components/welcome'
 import Faq from '../components/faq'
+import Impact from '../components/impact'
 import Schedule from '../components/schedule'
 import SpeakersAndJudges from '../components/speakersAndJudges'
 import Sponsors from '../components/sponsors'
@@ -20,6 +21,7 @@ export function Home(props) {
       </Head>
       <Header />
       <Welcome />
+      <Impact />
       <Schedule scheduleDays={props.scheduleDays}/>
       <Themes />
       <SpeakersAndJudges speakers={props.speakersAndJudgesItems} />

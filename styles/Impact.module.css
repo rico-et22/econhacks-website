@@ -1,0 +1,67 @@
+.impact {
+  padding: 3rem 1rem;
+  background: linear-gradient(281.58deg, #0C3F84 -4.33%, rgba(124, 124, 124, 0.46) 200.46%); /*linear-gradient(281.58deg, #032f6e -4.33%, rgba(6, 31, 66, 0.46) 140.46%);*/
+}
+.impact_header {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-top: 0;
+  color: #fff;
+  text-align: center;
+}
+.impact_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  justify-content: center;
+  position: relative;
+}
+.impact_cards_card {
+  border: 1px solid #F0F0F0;
+  box-shadow: 0px 3.2px 7.2px rgba(0, 0, 0, 0.132), 0px 0.6px 1.8px rgba(0, 0, 0, 0.108);
+  background: #fff;
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  transition: 100ms ease-in-out;
+}
+.impact_cards_card:hover {
+  box-shadow: 0px 6.4px 14.4px rgba(0, 0, 0, 0.132), 0px 1.2px 3.6px rgba(0, 0, 0, 0.108);
+  transform: scale(1.02);
+}
+@media (max-width: 767.98px) {
+  .impact_cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .impact_cards_card {
+    height: 100%;
+  }
+}
+@media (max-width: 639.98px) {
+  .impact_cards_card {
+    width: 100%;
+    max-width: 34rem;
+    margin: auto;
+    padding: .5rem;
+    height: auto;
+    min-height: 15rem;
+  }
+}
+.impact_cards_card h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: .75rem;
+}
+.impact_cards_card p {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 153.52%;
+  margin: 0;
+}
