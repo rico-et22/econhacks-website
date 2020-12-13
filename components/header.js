@@ -2,6 +2,7 @@ import styles from '../styles/Header.module.css'
 import Container from './container'
 import { Parallax } from 'react-parallax'
 import ApplyButton from './applyButton'
+import CTAButton from './ctaButton'
 
 export default function Header(props) {
   return (
@@ -18,7 +19,18 @@ export default function Header(props) {
             <h1 className={styles.header_title}>EconHacks 2021</h1>
             <p className={styles.header_description}>The largest <br/> economics hackathon.</p>
             <p className={styles.header_date}>February 13 - 14th</p>
-            <ApplyButton/>
+            <div className={styles.header_buttons}>
+              <CTAButton
+                href="https://econhacks.devfolio.co/"
+                openInNewTab
+              >
+                Register
+              </CTAButton>
+              <span>
+                or
+              </span>
+              <ApplyButton/>
+            </div>
           </div>
         </Container>
       </div>

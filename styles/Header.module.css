@@ -38,12 +38,19 @@
   margin-top: 0;
   margin-bottom: 1.1875rem;
 }
-
 .header_date {
   font-size: 1.5rem;
   color: #F8F8F8;
   margin-top: 0;
   margin-bottom: 2.1875rem;
+}
+.header_buttons {
+  display: flex;
+}
+.header_buttons span {
+  margin: 0 1rem;
+  color: #fff;
+  align-self: center;
 }
 
 @media (max-width: 639.98px) {
@@ -62,6 +69,12 @@
   .logo {
     height: 5rem;
     width: 5rem;
+  }
+  .header_buttons {
+    flex-direction: column;
+  }
+  .header_buttons span {
+    margin: 1rem 0
   }
 }
 @media (max-width: 399.98px) {

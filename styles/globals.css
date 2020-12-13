@@ -23,7 +23,7 @@ a {
   -webkit-box-align: center;
   align-items: center;
   background-color: #3770FF;
-  border-radius: 3px;
+  border-radius: 15px;
   border: none;
   color: #FFFFFF;
   cursor: pointer;
@@ -33,6 +33,7 @@ a {
   font-size: 1.125rem;
   font-weight: 600;
   padding: 12px 20px;
+  transition: 200ms ease-in-out;
   text-align: center;
 }
 
@@ -42,6 +43,7 @@ a {
 
 #devfolio-apply-now:hover {
   background-color: #2954BF !important;
+  transform: scale(1.05);
 }
 
 @media (max-width: 499.98px) {
