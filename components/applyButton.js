@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 export default function ApplyButton(props) {  
   const loadApplyNowScript = () => {
     const script = document.createElement('script');
@@ -10,6 +12,10 @@ export default function ApplyButton(props) {
   const handleLoad = () => {
     new Devfolio({ key: 'econhacks', buttonSelector: '#devfolio-apply-now' });
   };
+
+  useEffect(() => {
+    window.onload = loadApplyNowScript()
+  }, [])
   
   return (
     <button id="devfolio-apply-now" onClick={loadApplyNowScript}>
