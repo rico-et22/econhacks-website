@@ -1,8 +1,6 @@
 export default function ApplyButton(props) {  
   const loadApplyNowScript = () => {
     const script = document.createElement('script');
-    script.crossOrigin = 'anonymous'
-    script
     script.src = 'https://apply.devfolio.co';
     script.async = true;
     document.body.appendChild(script);
