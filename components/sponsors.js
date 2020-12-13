@@ -1,6 +1,6 @@
 import styles from '../styles/Sponsors.module.css'
 import Container from './container'
-import CTAButton from './cta-button'
+import CTAButton from './ctaButton'
 import SponsorList from './sponsorList'
 
 export default function Sponsors(props) {

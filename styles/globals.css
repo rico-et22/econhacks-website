@@ -17,3 +17,36 @@ a {
 * {
   box-sizing: border-box;
 }
+
+#devfolio-apply-now {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: #3770FF;
+  border-radius: 3px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 12px 20px;
+  text-align: center;
+}
+
+#devfolio-apply-now:not([disabled]) {
+  cursor: pointer;
+}
+
+#devfolio-apply-now:hover {
+  background-color: #2954BF !important;
+}
+
+@media (max-width: 499.98px) {
+  #devfolio-apply-now {
+    font-size: .875rem;
+  }
+}
+
