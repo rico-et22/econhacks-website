@@ -21,7 +21,7 @@ export default function Header(props) {
             <p className={styles.header_date}>February 13 - 14th</p>
             <div className={styles.header_buttons}>
               <CTAButton
-                href="https://econhacks.devfolio.co/"
+                href="https://forms.gle/LTJTwLmYxfrETkjE8"
                 openInNewTab
               >
                 Register
