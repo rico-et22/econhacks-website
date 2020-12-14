@@ -44,7 +44,7 @@ export default function Navbar(props) {
               </Link>
             </div>
             <a
-              href="https://econhacks.devfolio.co/"
+              href="https://econhacks-2021.devpost.com/"
               target="_blank"
               rel="noopener noreferrer"
               className={`${styles.nav_link_cta} ${router.pathname === '/register' ? styles.active : ''}`}
