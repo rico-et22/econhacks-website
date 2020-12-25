@@ -24,7 +24,7 @@ export function Home(props) {
       <Impact />
       <Schedule scheduleDays={props.scheduleDays}/>
       <Themes />
-      <SpeakersAndJudges speakers={props.speakersAndJudgesItems} />
+      <SpeakersAndJudges people={props.speakersAndJudgesItems} />
       <Faq />
       <Sponsors sponsors={props.sponsors} />
       <Footer />
@@ -55,6 +55,7 @@ export async function getStaticProps() {
           logo {
             url
           }
+          priorityOrderId
         }
         scheduleDays {
           scheduleEvents {
