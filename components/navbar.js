@@ -19,6 +19,7 @@ export default function Navbar(props) {
     }
   }
   useEffect(() => {
+    handleScroll()
     window.addEventListener('scroll',handleScroll)
   })
   return (
