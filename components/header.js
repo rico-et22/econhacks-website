@@ -20,15 +20,6 @@ export default function Header(props) {
             <p className={styles.header_description}>The largest <br/> economics hackathon.</p>
             <p className={styles.header_date}>February 13 - 14th</p>
             <div className={styles.header_buttons}>
-              <CTAButton
-                href="https://forms.gle/LTJTwLmYxfrETkjE8"
-                openInNewTab
-              >
-                Register
-              </CTAButton>
-              <span>
-                or
-              </span>
               <ApplyButton/>
             </div>
           </div>
