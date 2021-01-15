@@ -18,7 +18,7 @@ a {
   box-sizing: border-box;
 }
 
-#devfolio-apply-now {
+/* #devfolio-apply-now {
   -ms-flex-align: center;
   -webkit-box-align: center;
   align-items: center;
@@ -50,5 +50,4 @@ a {
   #devfolio-apply-now {
     font-size: .875rem;
   }
-}
-
+} */
