@@ -16,7 +16,7 @@ export default function Welcome(props) {
           <div className={styles.welcome_cards_card}>
             <h2>Beginner Friendly</h2>
             <p>
-              All middle and high school students are welcomed! <br/> We have various videolists that will be distributed in our chat to enhance participants' skills and assist them throughout the hackathon
+              All students are welcomed! <br/> We have various videolists that will be distributed in our chat to enhance participants' skills and assist them throughout the hackathon
             </p>
           </div>
           <div className={styles.welcome_cards_card}>

@@ -29,7 +29,7 @@ export default function Faq(props) {
           <div className={styles.faq_cards_card}>
             <h2>WHO IS ELIGIBLE?</h2>
             <p>
-              Anyone from 8th grade - 12th grade (or local equivalent) with a passion of economics!
+              Any students with a passion of economics and technology!
             </p>
           </div>
           <div className={styles.faq_cards_card}>
