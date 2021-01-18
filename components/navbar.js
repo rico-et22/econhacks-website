@@ -43,6 +43,14 @@ export default function Navbar(props) {
               <Link href="/#sponsors">
                 <a className={`${styles.nav_link} ${router.pathname === '/#sponsors' ? styles.active : ''}`}>Sponsors</a>
               </Link>
+              <a
+                href="https://www.bonfire.com/econhacks-2021-swag/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.nav_link}
+              >
+                Store
+              </a>
             </div>
             <a
               href="https://econhacks.devfolio.co/"
@@ -99,6 +107,15 @@ export default function Navbar(props) {
                 Sponsors
               </a>
             </Link>
+            <a
+              href="https://www.bonfire.com/econhacks-2021-swag/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.nav_link}
+              onClick={() => setIsMobileListOpen(!isMobileListOpen)}
+            >
+              Store
+            </a>
           </div>
         </div>
       </Container>
