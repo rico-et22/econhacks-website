@@ -37,6 +37,14 @@ export default function Navbar(props) {
               <Link href="/#schedule">
                 <a className={`${styles.nav_link} ${router.pathname === '/schedule' ? styles.active : ''}`}>Schedule</a>
               </Link>
+              <a
+                href="https://www.notion.so/EconHacks-Prizes-f938065ddba84b1b80ebbaccdb30045b"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.nav_link}
+              >
+                Prizes
+              </a>
               <Link href="/#faq">
                 <a className={`${styles.nav_link} ${router.pathname === '/#faq' ? styles.active : ''}`}>FAQ</a>
               </Link>
@@ -91,6 +99,15 @@ export default function Navbar(props) {
                 Schedule
               </a>
             </Link>
+            <a
+              href="https://www.notion.so/EconHacks-Prizes-f938065ddba84b1b80ebbaccdb30045b"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.nav_link}
+              onClick={() => setIsMobileListOpen(!isMobileListOpen)}
+            >
+              Prizes
+            </a>
             <Link href="/#faq">
               <a
                 className={`${styles.nav_link} ${router.pathname === '/#faq' ? styles.active : ''}`}

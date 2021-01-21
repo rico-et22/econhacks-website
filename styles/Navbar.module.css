@@ -95,7 +95,7 @@
   margin-left: auto;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .nav_link, .nav_link_cta {
     font-size: 1.125rem;
   }
