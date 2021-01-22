@@ -24,7 +24,6 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
         </body>
       </Html>
     )
