@@ -15,7 +15,7 @@ export default function Footer(props) {
       <Container>
         <div className={styles.footer_content}>
           <div>
-            <img src='/logo.jpg' className={styles.footer_logo}/>
+            <img src='/logo.jpg' className={styles.footer_logo} alt="EconHacks logo"/>
           </div>
           <div>
             <p className={styles.footer_content_paragraph}>

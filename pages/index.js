@@ -55,6 +55,7 @@ export async function getStaticProps() {
           logo {
             url
           }
+          logoAltText
           priorityOrderId
         }
         scheduleDays {

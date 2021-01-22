@@ -29,6 +29,7 @@ export default function Sponsors(props) {
             >
               <img
                 src="/prospectus.jpg"
+                alt="Sponsorship prospectus cover page"
               />
             </a>
           </div>

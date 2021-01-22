@@ -30,6 +30,7 @@ export default function Header(props) {
               allowFullScreen
               className={styles.header_video}
               loading="lazy"
+              title="Promo video"
             >
 
             </iframe>
