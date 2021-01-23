@@ -4,6 +4,14 @@
   position: relative;
   height: 100%;
 }
+.header_parallax > div {
+  width: 100%;
+  height: 100%;
+}
+.header_parallax img {
+  object-fit: cover;
+  object-position: top;
+}
 .header_color_bg {
   background-image: linear-gradient(281.58deg, #0C3F84 -4.33%, rgba(12, 63, 132, 0.46) 140.46%);
   height: 100%;
