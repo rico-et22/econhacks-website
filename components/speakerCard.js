@@ -1,4 +1,5 @@
 import styles from '../styles/SpeakerCard.module.css'
+import Image from 'next/image'
 
 export default function SpeakerCard(props) {
   const {title, photo, logo, logoAltText, description} = props.speakerData
@@ -6,19 +7,23 @@ export default function SpeakerCard(props) {
     <div className={styles.speaker_card_wrapper}>
       <div className={styles.speaker_card}>
         {photo && (
-          <img
-            src={photo.url}
-            className={styles.speaker_card_image}
-            alt={`Image of ${title}`}
-          />
+          <div className={styles.speaker_card_image}>
+            <Image
+              src={photo.url}
+              alt={`Image of ${title}`}
+              layout="fill"
+            />
+          </div>
         )}
         <div className={styles.speaker_card_description}>
           {logo && (
-            <img
-              src={logo.url}
-              className={styles.speaker_card_logo}
-              alt={`Logo of ${logoAltText}`}
-            />
+            <div className={styles.speaker_card_logo}>
+              <Image
+                src={logo.url}
+                alt={`Logo of ${logoAltText}`}
+                layout="fill"
+              />
+            </div>
           )}
           <h1>{title}</h1>
           <p>{description}</p>

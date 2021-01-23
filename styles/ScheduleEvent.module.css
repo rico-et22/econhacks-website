@@ -59,19 +59,26 @@
   margin-top: 0;
 }
 .schedule_event_image {
+  position: relative;
   width: 22.4375rem;
   height: 11.875rem;
-  object-fit: cover;
   border-radius: .75rem;
   transition: 100ms ease-in-out;
   box-shadow: 0px 3.2px 7.2px rgba(0, 0, 0, 0.132), 0px 0.6px 1.8px rgba(0, 0, 0, 0.108);
+}
+.schedule_event_image div {
+  border-radius: .75rem;
+}
+.schedule_event_image img {
+  object-fit: cover;
 }
 .schedule_event_image:hover {
   box-shadow: 0px 6.4px 14.4px rgba(0, 0, 0, 0.132), 0px 1.2px 3.6px rgba(0, 0, 0, 0.108);
   transform: scale(1.02);
 }
 .mobile .schedule_event_image {
-  max-width: 100%;
+  max-width: 22.4375rem;
+  width: auto;
   height: auto;
 }
 @media (max-width: 767.98px) {

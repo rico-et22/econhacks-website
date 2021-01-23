@@ -20,8 +20,12 @@
   display: block;
   width: 100%;
   border-radius: 1rem 1rem 0 0;
-  max-height: 11.070625rem;
+  height: 11.070625rem;
+  position: relative;
+}
+.speaker_card_image img {
   object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
 }
 .speaker_card_description {
   padding: 1.5rem;
@@ -44,8 +48,11 @@
   width: 4rem;
   top: -2.5rem;
   right: 1.5rem;
-  padding: .25rem;
   background: #fff;
   border-radius: 100%;
   border: 1px solid #333;
+}
+.speaker_card_logo img {
+  padding: .25rem !important;
+  border-radius: 100%;
 }

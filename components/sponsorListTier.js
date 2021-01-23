@@ -1,4 +1,5 @@
 import styles from '../styles/SponsorListTier.module.css'
+import Image from 'next/image'
 
 export default function SponsorList(props) {
   const {sponsors, logoSize, title} = props
@@ -12,14 +13,15 @@ export default function SponsorList(props) {
                 href={sponsor.website}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={styles.sponsor_list_tier_item}
+                className={`${styles.sponsor_list_tier_item} ${styles[logoSize]}`}
                 key={index}
               >
-                <img
+                <Image
                   src={sponsor.logo.url}
                   alt={sponsor.name}
                   title={sponsor.name}
                   className={`${styles.sponsor_list_tier_item_logo} ${styles[logoSize]}`}
+                  layout="fill"
                 />
               </a>
             )

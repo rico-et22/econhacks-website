@@ -1,4 +1,5 @@
 import styles from '../styles/ScheduleEvent.module.css'
+import Image from 'next/image'
 
 export default function ScheduleEvent(props) {
   let data = {}
@@ -23,7 +24,7 @@ export default function ScheduleEvent(props) {
         <div className={styles.schedule_event_info}>
           <h4>{data.title}</h4>
           <div dangerouslySetInnerHTML={{__html:data.description}}/>
-          {data.image && <img src={data.image.url} alt={`Image of ${data.title}`} className={styles.schedule_event_image}/>}
+          {data.image && <div className={styles.schedule_event_image}><Image src={data.image.url} alt={`Image of ${data.title}`} layout='fill'/></div>}
         </div>
       </div>
       <div className={styles.mobile}>
@@ -37,7 +38,7 @@ export default function ScheduleEvent(props) {
           <div className={styles.schedule_event_info}>
             <h4>{data.title}</h4>
             <div dangerouslySetInnerHTML={{__html:data.description}}/>
-            {data.image && <img src={data.image.url} alt={`Image of ${data.title}`} className={styles.schedule_event_image}/>}
+            {data.image && <div className={styles.schedule_event_image}><Image src={data.image.url} alt={`Image of ${data.title}`} width="359" height="190" layout="responsive"/></div>}
           </div>
         </div>
       </div>

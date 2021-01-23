@@ -8,22 +8,27 @@
   margin: 1rem;
   display: flex;
   align-items: center;
+  position: relative;
+  width: fit-content;
 }
-
+.sponsor_list_tier_item div, .sponsor_list_tier_item img {
+  position: relative !important;
+}
 .sponsor_list_tier_item_logo {
-  transition: 100ms ease-in-out;
   display: block;
-  max-width: 100%;
+  width: auto !important;
+  height: 100% !important;
+  object-fit: contain;
 }
-.sponsor_list_tier_item_logo.l {
-  max-height: 5rem;
+.sponsor_list_tier_item.l div {
+  height: 5rem !important;
 }
-.sponsor_list_tier_item_logo.m {
-  max-height: 4rem;
+.sponsor_list_tier_item.m div {
+  height: 4rem !important;
 }
-.sponsor_list_tier_item_logo.s {
-  max-height: 3rem;
+.sponsor_list_tier_item.s div {
+  height: 3rem !important;
 }
-.sponsor_list_tier_item_logo.xs, .sponsor_list_tier_item_logo.additionalSupport {
-  max-height: 2rem;
+.sponsor_list_tier_item.xs div, .sponsor_list_tier_item.additionalSupport div {
+  height: 2rem !important;
 }
