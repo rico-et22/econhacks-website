@@ -29,7 +29,7 @@ export default function Navbar(props) {
           <Link href="/">
             <img src="/logo.jpg" className={styles.logo} alt="EconHacks logo"></img>
           </Link>
-          <div className={styles.nav_right}>
+          <div className={styles.nav_center}>
             <div className={styles.desktop_only}>
               <Link href="/about">
                 <a className={`${styles.nav_link} ${router.pathname === '/about' ? styles.active : ''}`}>About</a>
@@ -60,6 +60,8 @@ export default function Navbar(props) {
                 Store
               </a>
             </div>
+          </div>
+          <div className={styles.nav_buttons}>
             <a
               href="https://econhacks.devfolio.co/"
               target="_blank"
@@ -75,7 +77,7 @@ export default function Navbar(props) {
               <Icon
                 glyph="menu"
                 size={64}
-                fill="#fff"
+                fill="#191919"
                 className={styles.nav_mobile_menu_button_icon}
               />
             </button>

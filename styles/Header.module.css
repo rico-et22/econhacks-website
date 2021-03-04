@@ -1,22 +1,16 @@
 .header {
   background-position: center;
-  min-height: 594px;
+  min-height: 800px;
   position: relative;
   height: 100%;
-}
-.header_parallax > div {
-  width: 100%;
-  height: 100%;
-}
-.header_parallax img {
-  object-fit: cover;
-  object-position: top;
+  background-color: #eefcfc;
+  background-image: linear-gradient(0deg, #eefcfc 0%, #B5FFFC 100%);
 }
 .header_color_bg {
-  background-image: linear-gradient(281.58deg, #0C3F84 -4.33%, rgba(12, 63, 132, 0.46) 140.46%);
+  background: url('https://www.transparenttextures.com/patterns/worn-dots.png');
   height: 100%;
   min-height: inherit;
-  padding: 0 1rem;
+  padding: 0 1rem 4rem 1rem;
 }
 .navbar_filler {
   height: 146px;
@@ -30,54 +24,55 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
 }
 .header_title {
   font-weight: bold;
   font-size: 1.5rem;
-  color: #F8F8F8;
   margin-top: 0;
-  margin-bottom: .75rem;
+  margin-bottom: 1.75rem;
 }
 .header_description {
-  font-weight: 900;
-  font-size: 3.125rem;
-  color: #fff;
+  font-weight: 700;
+  font-size: 5rem;
   margin-top: 0;
-  margin-bottom: 1.1875rem;
+  margin-bottom: 2.5rem;
+}
+.header_description_color {
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 900;
+  color: transparent;
+  background-image: linear-gradient(281.58deg, #0C3F84 -4.33%, rgba(124, 124, 124, 0.46) 200.46%);
 }
 .header_date {
   font-size: 1.5rem;
-  color: #F8F8F8;
+  color: #666;
   margin-top: 0;
-  margin-bottom: 2.1875rem;
+  margin-bottom: 4rem;
 }
 .header_buttons {
   display: flex;
 }
 .header_buttons span {
   margin: 0 1rem;
-  color: #fff;
   align-self: center;
 }
 .header_video {
   border-radius: 1rem;
-  width: 500px;
-  height: 281px;
+  width: 768px;
+  height: 432px;
   transition: 200ms ease-in-out;
-}
-.header_video:hover {
+  margin: auto;
   box-shadow: 0px 6.4px 14.4px rgba(0, 0, 0, 0.132), 0px 1.2px 3.6px rgba(0, 0, 0, 0.108);
-}
-
-@media (max-width: 1199.98px) {
-  .header_video {
-    height: 252px;
-  }
 }
 
 @media (max-width: 991.98px) {
   .header_video {
-    height: 189px;
+    margin-top: 2.1875rem;
+    width: 500px;
+    height: 281px;
   }
 }
 
@@ -85,10 +80,6 @@
   .header_content {
     flex-direction: column;
     align-items: flex-start;
-  }
-  .header_video {
-    margin-top: 2.1875rem;
-    height: 281px;
   }
   .header_color_bg {
     padding-bottom: 4rem;
@@ -112,5 +103,8 @@
   .header_video {
     margin-top: 2.1875rem;
     max-width: 100%;
+  }
+  .header_description {
+    font-size: 3.5rem;
   }
 }
