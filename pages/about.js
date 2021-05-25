@@ -9,9 +9,11 @@ export function About(props) {
   return (
     <div>
       <Head>
-        <title>About - EconHacks 2021 - The largest economics hackathon</title>
+        <title>About - {props.misc.headTitle}</title>
+        <meta name="description" content={props.misc.metaDescription}/>
+        <meta name="og:description" content={props.misc.metaDescription}/>
       </Head>
-      <AboutHeader />
+      <AboutHeader title={props.misc.hackathonTitle}/>
       <Team teamMembers={props.teamMembers}/>
       <Footer />
     </div>
@@ -33,6 +35,11 @@ export async function getStaticProps() {
           linkedInLink
           role
         }
+        miscs {
+          hackathonTitle
+          headTitle
+          metaDescription
+        }
       }
     `,
   })
@@ -40,6 +47,7 @@ export async function getStaticProps() {
   return {
     props: {
       teamMembers: apolloClient.cache.extract().ROOT_QUERY.teamMembers,
+      misc: apolloClient.cache.extract().ROOT_QUERY.miscs[0]
     }
   }
 }

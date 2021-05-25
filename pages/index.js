@@ -15,17 +15,21 @@ export function Home(props) {
   return (
     <div>
       <Head>
-        <title>EconHacks 2021 - The largest economics hackathon</title>
-        <meta name="description" content="EconHacks 2021 is a virtual hackathon that fosters hackers to solve problems in economics. Register today for 24 hours of coding, fun & learning!"/>
-        <meta name="og:description" content="EconHacks 2021 is a virtual hackathon that fosters hackers to solve problems in economics. Register today for 24 hours of coding, fun & learning!"/>
+        <title>{props.misc.headTitle}</title>
+        <meta name="description" content={props.misc.metaDescription}/>
+        <meta name="og:description" content={props.misc.metaDescription}/>
       </Head>
-      <Header />
+      <Header
+        title={props.misc.hackathonTitle}
+        description={props.misc.headerDescription}
+        date={props.misc.headerDate}
+      />
       <Welcome />
       <Impact />
       <Schedule scheduleDays={props.scheduleDays}/>
       <Themes />
       <SpeakersAndJudges people={props.speakersAndJudgesItems} />
-      <Faq />
+      <Faq cardData={props.faqCards}/>
       <Sponsors sponsors={props.sponsors} />
       <Footer />
     </div>
@@ -70,6 +74,17 @@ export async function getStaticProps() {
           date
           dayNumber
         }
+        miscs {
+          hackathonTitle
+          headerDescription
+          headerDate
+          headTitle
+          metaDescription
+        }
+        faqCards {
+          header
+          content
+        }
       }
     `,
   })
@@ -78,7 +93,9 @@ export async function getStaticProps() {
     props: {
       sponsors: apolloClient.cache.extract().ROOT_QUERY.sponsors,
       speakersAndJudgesItems: apolloClient.cache.extract().ROOT_QUERY.speakerSeriesItems,
-      scheduleDays: apolloClient.cache.extract().ROOT_QUERY.scheduleDays
+      scheduleDays: apolloClient.cache.extract().ROOT_QUERY.scheduleDays,
+      misc: apolloClient.cache.extract().ROOT_QUERY.miscs[0],
+      faqCards: apolloClient.cache.extract().ROOT_QUERY.faqCards
     }
   }
 }

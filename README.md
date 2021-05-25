@@ -1,6 +1,6 @@
 ![EconHacks logo](econhacks-logo.png)
 
-## EconHacks 2021 Official Website
+## EconHacks Official Website
 [https://econhacks.org](https://econhacks.org)
 
 ## Technologies Used

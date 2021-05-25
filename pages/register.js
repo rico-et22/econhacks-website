@@ -3,12 +3,14 @@ import RegisterHeader from '../components/Register/registerHeader'
 import Footer from '../components/footer'
 import Container from '../components/container'
 import styles from '../styles/Register.module.css'
+import { initializeApollo } from '../lib/apolloClient'
+import { gql } from '@apollo/client'
 
 export default function Register(props) {
   return (
     <div>
       <Head>
-        <title>Register - EconHacks 2021 - The largest economics hackathon</title>
+        <title>Register - {props.misc.headTitle}</title>
       </Head>
       <RegisterHeader/>
       <Container>
@@ -27,4 +29,24 @@ export default function Register(props) {
       <Footer />
     </div>
   )
+}
+
+export async function getStaticProps() {
+  const apolloClient = initializeApollo()
+
+  await apolloClient.query({
+    query: gql`
+      {
+        miscs {
+          headTitle
+        }
+      }
+    `,
+  })
+
+  return {
+    props: {
+      misc: apolloClient.cache.extract().ROOT_QUERY.miscs[0]
+    }
+  }
 }

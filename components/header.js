@@ -5,6 +5,7 @@ import ApplyButton from './applyButton'
 import Image from 'next/image'
 
 export default function Header(props) {
+  const {title, description, date} = props
   return (
     <Parallax
       contentClassName={styles.header}
@@ -19,9 +20,9 @@ export default function Header(props) {
           <div className={styles.navbar_filler}/>
           <div className={styles.header_content}>
             <div>
-              <h1 className={styles.header_title}>EconHacks 2021</h1>
-              <p className={styles.header_description}>The largest <br/> economics hackathon.</p>
-              <p className={styles.header_date}>February 13 - 14th</p>
+              <h1 className={styles.header_title}>{title}</h1>
+              <p className={styles.header_description} dangerouslySetInnerHTML={{__html: description}}></p>
+              <p className={styles.header_date}>{date}</p>
               <div className={styles.header_buttons}>
                 <ApplyButton/>
               </div>

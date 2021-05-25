@@ -10,8 +10,6 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta name="description" content="EconHacks 2021 is a virtual hackathon that fosters hackers to solve problems in economics. Register today for 24 hours of coding, fun & learning!"/>
-          <meta property="og:description" content="EconHacks 2021 is a virtual hackathon that fosters hackers to solve problems in economics. Register today for 24 hours of coding, fun & learning!"/>
           <meta property="og:url" content="https://econhacks.org"/>
           <meta property="og:image" content="/apple-touch-icon.png"/>
           <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>

@@ -4,6 +4,7 @@ import Container from '../container'
 import { Parallax } from 'react-parallax'
 
 export default function AboutHeader(props) {
+  const {title} = props
   return (
     <Parallax
       bgImage='/bkg2.jpg'
@@ -15,7 +16,7 @@ export default function AboutHeader(props) {
         <Container>
           <div className={styles.navbar_filler}/>
           <div className={aboutStyles.about_header_content}>
-            <h1 className={aboutStyles.about_header_title}>EconHacks 2021</h1>
+            <h1 className={aboutStyles.about_header_title}>{title}</h1>
             <p className={aboutStyles.about_header_description}>About</p>
           </div>
         </Container>
