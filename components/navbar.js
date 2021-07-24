@@ -27,47 +27,19 @@ export default function Navbar(props) {
       <Container>
         <nav className={styles.nav}>
           <Link href="/">
-            <img src="/logo.jpg" className={styles.logo} alt="EconHacks logo"></img>
+            <img src="/logo.svg" className={styles.logo} alt="EconHacks logo"></img>
           </Link>
           <div className={styles.nav_right}>
             <div className={styles.desktop_only}>
               <Link href="/about">
                 <a className={`${styles.nav_link} ${router.pathname === '/about' ? styles.active : ''}`}>About</a>
               </Link>
-              <Link href="/#schedule">
-                <a className={`${styles.nav_link} ${router.pathname === '/schedule' ? styles.active : ''}`}>Schedule</a>
-              </Link>
-              <a
-                href="https://www.notion.so/EconHacks-Prizes-f938065ddba84b1b80ebbaccdb30045b"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.nav_link}
-              >
-                Prizes
-              </a>
-              <Link href="/#faq">
-                <a className={`${styles.nav_link} ${router.pathname === '/#faq' ? styles.active : ''}`}>FAQ</a>
-              </Link>
-              <Link href="/#sponsors">
-                <a className={`${styles.nav_link} ${router.pathname === '/#sponsors' ? styles.active : ''}`}>Sponsors</a>
-              </Link>
-              <a
-                href="https://www.bonfire.com/econhacks-2021-swag/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.nav_link}
-              >
-                Store
-              </a>
             </div>
-            <a
-              href="https://econhacks.devfolio.co/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`${styles.nav_link_cta} ${router.pathname === '/register' ? styles.active : ''}`}
-            >
-              Register
-            </a>
+            <Link href="/apply">
+              <a className={`${styles.nav_link_cta} ${router.pathname === '/apply' ? styles.active : ''}`}>
+                Apply
+              </a>
+            </Link>
             <button
               className={styles.nav_mobile_menu_button}
               onClick={() => setIsMobileListOpen(!isMobileListOpen)}
@@ -91,48 +63,6 @@ export default function Navbar(props) {
                 About
               </a>
             </Link>
-            <Link href="/#schedule">
-              <a
-                className={`${styles.nav_link} ${router.pathname === '/schedule' ? styles.active : ''}`}
-                onClick={() => setIsMobileListOpen(!isMobileListOpen)}
-              >
-                Schedule
-              </a>
-            </Link>
-            <a
-              href="https://www.notion.so/EconHacks-Prizes-f938065ddba84b1b80ebbaccdb30045b"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.nav_link}
-              onClick={() => setIsMobileListOpen(!isMobileListOpen)}
-            >
-              Prizes
-            </a>
-            <Link href="/#faq">
-              <a
-                className={`${styles.nav_link} ${router.pathname === '/#faq' ? styles.active : ''}`}
-                onClick={() => setIsMobileListOpen(!isMobileListOpen)}
-              >
-                FAQ
-              </a>
-            </Link>
-            <Link href="/#sponsors">
-              <a
-                className={`${styles.nav_link} ${router.pathname === '/#sponsors' ? styles.active : ''}`}
-                onClick={() => setIsMobileListOpen(!isMobileListOpen)}
-              >
-                Sponsors
-              </a>
-            </Link>
-            <a
-              href="https://www.bonfire.com/econhacks-2021-swag/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.nav_link}
-              onClick={() => setIsMobileListOpen(!isMobileListOpen)}
-            >
-              Store
-            </a>
           </div>
         </div>
       </Container>

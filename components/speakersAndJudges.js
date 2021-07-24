@@ -10,7 +10,7 @@ export default function SpeakersAndJudges(props) {
   return (
     <section className={styles.speakers_judges}>
       <Container>
-        <h1 className={styles.speakers_judges_header}>Speakers & Judges</h1>
+        <h1 className={styles.speakers_judges_header}>Existing Speaker Base</h1>
         <div className={styles.speakers_judges_cards}>
           {priorityPeople.map((speaker, index) => {
             return <SpeakerCard speakerData={speaker} key={index}/>

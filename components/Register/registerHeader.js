@@ -1,16 +1,19 @@
 import styles from '../../styles/Header.module.css'
 import registerStyles from '../../styles/Register.module.css'
 import Container from '../container'
-import { Parallax } from 'react-parallax'
+import { Parallax, Background } from 'react-parallax'
+import Image from 'next/image'
 
 export default function RegisterHeader(props) {
   return (
     <Parallax
-      bgImage='/bkg2.jpg'
-      bgImageAlt="background"
       contentClassName={styles.header}
       strength={300}
+      className={styles.header_parallax}
     >
+      <Background>
+        <Image src="/bkg.jpg" alt="" layout="fill" objectPosition="center"/>
+      </Background>
       <div className={styles.header_color_bg}>
         <Container>
           <div className={styles.navbar_filler}/>

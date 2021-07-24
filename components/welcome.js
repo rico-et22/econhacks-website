@@ -8,33 +8,38 @@ export default function Welcome(props) {
         <div className={styles.welcome_header}>
           <h1>Welcome to EconHacks</h1>
           <p>
-          EconHacks is a completely free 24 hours virtual hackathon that fosters hackers to solve problems in the field of economics.
-          People from all over the world will gather around in the teams of 1-4 people and use code to solve some of the economic problems we are facing today, especially during this pandemic.
+          We organized the largest youth-led economics hackathon named EconHacks last year, with over 350+ highschool students & undergraduates from 23+ countries competing for a 230k USD prize pool.
           </p>
         </div>
+        <h2 className={styles.welcome_subheader}>
+          What you get
+        </h2>
         <div className={styles.welcome_cards}>
           <div className={styles.welcome_cards_card}>
-            <h2>Beginner Friendly</h2>
+            <h3>legal work all settled.</h3>
             <p>
-              All students are welcomed! <br/> We have various videolists that will be distributed in our chat to enhance participants' skills and assist them throughout the hackathon
+              <ul>
+                <li>Our fiscally sponsored 501(c)(3) non-profit status</li>
+                <li>Free banking services (with a certain rate for hackathons)</li>
+              </ul>
             </p>
           </div>
           <div className={styles.welcome_cards_card}>
-            <h2>Network</h2>
+            <h3>Copy & Paste</h3>
             <p>
-              Meet people from places all around the world! <br/> Virtual hackathon allows you sit back at home and network with passionate hackers just like you!
+              Sponsorship & Outreach Templates all settled ; <br/> HR Logistics and every possible document that you need to host a complete hackathon provided for FREE
             </p>
           </div>
           <div className={styles.welcome_cards_card}>
-            <h2>Win prizes</h2>
+            <h3>Speakers</h3>
             <p>
-              Earn the reward for your hard work and get support from our sponsors to continue grow your project after this hackathon! 
+              Pre-recorded speakers videos to display during hackathon such as United Nations Secretary General Candidate or Harvard Economists. 
             </p>
           </div>
           <div className={styles.welcome_cards_card}>
-            <h2>Learn & Explore</h2>
+            <h3>Learn & Explore</h3>
             <p>
-              Gain insights and experience from guest speaker series! Our guest speakers have many years of experience in their field of expertise
+              Gain insights and experience from our core team, many competed in 10+ hackathons with extensive experiences in different fields.
             </p>
           </div>
         </div>
