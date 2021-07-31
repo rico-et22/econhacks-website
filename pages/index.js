@@ -13,7 +13,7 @@ export function Home(props) {
       <Head>
         <title>{props.misc.headTitle}</title>
         <meta name="description" content={props.misc.metaDescription}/>
-        <meta name="og:description" content={props.misc.metaDescription}/>
+        <meta property="og:description" content={props.misc.metaDescription}/>
       </Head>
       <Header
         title={props.misc.hackathonTitle}
