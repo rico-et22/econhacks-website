@@ -1,4 +1,4 @@
-![EconHacks logo](econhacks-logo.png)
+<img src="logo.svg" alt="EconHacks logo" style="height: 10rem">
 
 ## EconHacks Official Website
 [https://econhacks.org](https://econhacks.org)
