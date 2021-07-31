@@ -1,40 +1,36 @@
 import styles from '../styles/Sponsors.module.css'
 import Container from './container'
-import CTAButton from './ctaButton'
-import SponsorList from './sponsorList'
+import Image from 'next/image'
 
 export default function Sponsors(props) {
+  const {sponsors} = props
+
   return (
     <section className={styles.sponsors} id="sponsors">
       <Container>
-        <h1 className={styles.sponsors_header}>Sponsors</h1>
-        <SponsorList sponsors={props.sponsors} />
-        <div className={styles.sponsors_row}>
-          <div className={styles.sponsors_col_info}>
-            <h2>Sponsor our hackathon!</h2>
-            <p>View our prospectus to get more information about our hackathon, <br/> sponsorship tiers & more.</p>
-            <p>We are a 501(c)(3) nonprofit — all donations are tax-deductible!</p>
-            <CTAButton
-              href="/EconHacks_Sponsorship_Prospectus.pdf"
-              className={styles.sponsors_col_info_cta}
-              smallFont
-            >
-              View prospectus
-            </CTAButton>
-          </div>
-          <div className={styles.sponsors_col_image}>
-            <a
-              href="/EconHacks_Sponsorship_Prospectus.pdf"
-              className={styles.sponsors_image}
-            >
-              <img
-                src="/prospectus.jpg"
-                alt="Sponsorship prospectus cover page"
-              />
-            </a>
-          </div>
+        <h2 className={styles.sponsors_header}>Support from</h2>
+        <div className={`${styles.sponsors_list}`}>
+          {sponsors.map((sponsor, index) => {
+            return (
+              <a
+                href={sponsor.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${styles.sponsors_list_item}`}
+                key={index}
+              >
+                <Image
+                  src={sponsor.logo.url}
+                  alt={sponsor.name}
+                  title={sponsor.name}
+                  className={`${styles.sponsors_list_item_logo}`}
+                  layout="fill"
+                />
+              </a>
+            )
+          })}
         </div>
-      </Container>
+    </Container>
     </section>
   )
 }

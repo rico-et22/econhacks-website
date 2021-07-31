@@ -26,6 +26,15 @@ export default function TeamPhotoFlag(props) {
     {
       name: 'Kenya',
       imageFileName: 'kenya'
+    },
+    {
+      name: 'Canada',
+      imageFileName: 'canada'
+    },
+    {
+      name: 'Indonesia',
+      imageFileName: 'indonesia',
+      imageHasBorder: true
     }
   ]
 
