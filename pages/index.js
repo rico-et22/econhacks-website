@@ -5,6 +5,7 @@ import SpeakersAndJudges from '../components/speakersAndJudges'
 import Footer from '../components/footer'
 import { initializeApollo } from '../lib/apolloClient'
 import { gql } from '@apollo/client'
+import Sponsors from '../components/sponsors'
 
 export function Home(props) {
   return (
@@ -19,6 +20,7 @@ export function Home(props) {
         description={props.misc.headerDescription}
         date={props.misc.headerDate}
       />
+      <Sponsors sponsors={props.sponsors} />
       <Welcome />
       <SpeakersAndJudges people={props.speakersAndJudgesItems} />
       <Footer />
@@ -32,6 +34,14 @@ export async function getStaticProps() {
   await apolloClient.query({
     query: gql`
       {
+        sponsors {
+          name
+          logo {
+            url
+          }
+          logoSize
+          website
+        }
         speakerSeriesItems {
           title
           description
@@ -57,6 +67,7 @@ export async function getStaticProps() {
 
   return {
     props: {
+      sponsors: apolloClient.cache.extract().ROOT_QUERY.sponsors,
       speakersAndJudgesItems: apolloClient.cache.extract().ROOT_QUERY.speakerSeriesItems,
       misc: apolloClient.cache.extract().ROOT_QUERY.miscs[0],
     }
