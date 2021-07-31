@@ -34,7 +34,7 @@ export async function getStaticProps() {
   await apolloClient.query({
     query: gql`
       {
-        sponsors {
+        sponsors(orderBy: publishedAt_ASC) {
           name
           logo {
             url
@@ -65,9 +65,11 @@ export async function getStaticProps() {
     `,
   })
 
+  console.log(apolloClient.cache.extract().ROOT_QUERY)
+
   return {
     props: {
-      sponsors: apolloClient.cache.extract().ROOT_QUERY.sponsors,
+      sponsors: apolloClient.cache.extract().ROOT_QUERY['sponsors({"orderBy":"publishedAt_ASC"})'],
       speakersAndJudgesItems: apolloClient.cache.extract().ROOT_QUERY.speakerSeriesItems,
       misc: apolloClient.cache.extract().ROOT_QUERY.miscs[0],
     }
