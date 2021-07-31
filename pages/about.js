@@ -11,7 +11,7 @@ export function About(props) {
       <Head>
         <title>About - {props.misc.headTitle}</title>
         <meta name="description" content={props.misc.metaDescription}/>
-        <meta name="og:description" content={props.misc.metaDescription}/>
+        <meta property="og:description" content={props.misc.metaDescription}/>
       </Head>
       <AboutHeader title={props.misc.hackathonTitle}/>
       <Team teamMembers={props.teamMembers}/>
