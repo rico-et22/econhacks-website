@@ -65,8 +65,6 @@ export async function getStaticProps() {
     `,
   })
 
-  console.log(apolloClient.cache.extract().ROOT_QUERY)
-
   return {
     props: {
       sponsors: apolloClient.cache.extract().ROOT_QUERY['sponsors({"orderBy":"publishedAt_ASC"})'],

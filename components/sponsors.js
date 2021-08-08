@@ -30,6 +30,26 @@ export default function Sponsors(props) {
             )
           })}
         </div>
+        <div className={styles.sponsors_cards}>
+          <div className={styles.sponsors_cards_card}>
+            <h2>$230,000</h2>
+            <p>
+              prize pool
+            </p>
+          </div>
+          <div className={styles.sponsors_cards_card}>
+            <h2>3,000+</h2>
+            <p>
+              hackers
+            </p>
+          </div>
+          <div className={styles.sponsors_cards_card}>
+            <h2>20+</h2>
+            <p>
+              countries
+            </p>
+          </div>
+        </div>
     </Container>
     </section>
   )
