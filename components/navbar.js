@@ -34,12 +34,13 @@ export default function Navbar(props) {
               <Link href="/about">
                 <a className={`${styles.nav_link} ${router.pathname === '/about' ? styles.active : ''}`}>About</a>
               </Link>
+              <Link href="/chapters">
+                <a className={`${styles.nav_link} ${router.pathname === '/chapters' ? styles.active : ''}`}>Chapters</a>
+              </Link>
             </div>
-            <Link href="/apply">
-              <a className={`${styles.nav_link_cta} ${router.pathname === '/apply' ? styles.active : ''}`}>
-                Apply
-              </a>
-            </Link>
+            <a className={`${styles.nav_link_cta} ${router.pathname === '/apply' ? styles.active : ''}`} href="https://amazing-trampoline-e72.notion.site/EconHacks-Main-Doc-2d1fe7c915ca43e69bdcf8bca98006ce" target="_blank" rel="noopener noreferrer" >
+              Apply
+            </a>
             <button
               className={styles.nav_mobile_menu_button}
               onClick={() => setIsMobileListOpen(!isMobileListOpen)}
@@ -61,6 +62,14 @@ export default function Navbar(props) {
                 onClick={() => setIsMobileListOpen(!isMobileListOpen)}
               >
                 About
+              </a>
+            </Link>
+            <Link href="/chapters">
+              <a
+                className={`${styles.nav_link} ${router.pathname === '/chapters' ? styles.active : ''}`}
+                onClick={() => setIsMobileListOpen(!isMobileListOpen)}
+              >
+                Chapters
               </a>
             </Link>
           </div>

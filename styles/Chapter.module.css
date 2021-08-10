@@ -1,0 +1,94 @@
+.chapter_list {
+  padding: 3rem 1rem;
+}
+.chapter_list_cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 2rem;
+  justify-content: center;
+  position: relative;
+}
+.chapter_card {
+  box-shadow: 0px 3.2px 7.2px rgba(0, 0, 0, 0.132), 0px 0.6px 1.8px rgba(0, 0, 0, 0.108);
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  transition: 100ms ease-in-out;
+  justify-content: center;
+}
+.chapter_card:hover {
+  box-shadow: 0px 6.4px 14.4px rgba(0, 0, 0, 0.132), 0px 1.2px 3.6px rgba(0, 0, 0, 0.108);
+  transform: scale(1.02);
+}
+.chapter_card_info_header {
+  display: flex;
+  align-items: center;
+}
+.chapter_card_info_header h2 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-top: 0;
+  margin-bottom: .5rem;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+.chapter_card_info p {
+  font-size: 1rem;
+  color: #f0f0f0;
+  margin: 0;
+  text-align: center;
+}
+.chapter_card_image_wrapper {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.chapter_card_image {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  position: relative;
+}
+.chapter_card_image img {
+  border-radius: .5rem;
+}
+@media (max-width: 1023.98px) {
+  .chapter_list_cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .chapter_card {
+    width: 100%;
+    padding: 1rem
+  }
+  .chapter_card_info_header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .chapter_card_info_header h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .chapter_card {
+    height: 100%;
+  }
+}
+@media (max-width: 639.98px) {
+  .chapter_list_cards {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .chapter_card {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    flex-direction: column;
+  }
+  .chapter_card_image {
+    margin-right: 0;
+  }
+}
