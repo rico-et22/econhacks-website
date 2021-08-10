@@ -38,7 +38,7 @@ export default function Navbar(props) {
                 <a className={`${styles.nav_link} ${router.pathname === '/chapters' ? styles.active : ''}`}>Chapters</a>
               </Link>
             </div>
-            <a className={`${styles.nav_link_cta} ${router.pathname === '/apply' ? styles.active : ''}`} href="https://amazing-trampoline-e72.notion.site/EconHacks-Main-Doc-2d1fe7c915ca43e69bdcf8bca98006ce" target="_blank" rel="noopener noreferrer" >
+            <a className={`${styles.nav_link_cta} ${router.pathname === '/apply' ? styles.active : ''}`} href="https://forms.gle/iVduPAMDai8V8XyK8" target="_blank" rel="noopener noreferrer" >
               Apply
             </a>
             <button

@@ -23,7 +23,7 @@ export default function Header(props) {
               <h1 className={styles.header_title}>{title}</h1>
               <p className={styles.header_description} dangerouslySetInnerHTML={{__html: description}}></p>
               <p className={styles.header_date}>{date}</p>
-              <CTAButton href="https://amazing-trampoline-e72.notion.site/EconHacks-Main-Doc-2d1fe7c915ca43e69bdcf8bca98006ce" openInNewTab>Apply</CTAButton>
+              <CTAButton href="https://forms.gle/iVduPAMDai8V8XyK8" openInNewTab>Apply</CTAButton>
             </div>
           </div>
         </Container>
