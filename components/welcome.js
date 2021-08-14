@@ -10,6 +10,9 @@ export default function Welcome(props) {
           <p>
           We organized the largest youth-led economics hackathon named EconHacks last year, with over 350+ highschool students & undergraduates from 23+ countries competing for a 230k USD prize pool.
           </p>
+          <p>
+          We need more youths taking initiatives to spread the combination of CS and Economics together. That is why EconHacks is transfering to a chapter system based hackathon where we accept chapter applications from almost everywhere in the world. If you are a leader in your community whose interest aligns with us, click in "apply"!
+          </p>
         </div>
         <h2 className={styles.welcome_subheader}>
           What you get
