@@ -10,6 +10,18 @@ export default function Sponsors(props) {
       <Container>
         <h2 className={styles.sponsors_header}>Support from</h2>
         <div className={`${styles.sponsors_list}`}>
+          <div
+            className={`${styles.sponsors_list_item} ${styles.sponsors_list_item_big}`}
+          >
+            <Image
+              src="/yp.png"
+              alt="YP"
+              className={`${styles.sponsors_list_item_logo}`}
+              layout="fill"
+            />
+          </div>
+        </div>
+        <div className={`${styles.sponsors_list}`}>
           {sponsors.map((sponsor, index) => {
             return (
               <a

@@ -33,6 +33,11 @@
   position: relative !important;
   height: 4rem !important;
 }
+.sponsors_list_item_big div,
+.sponsors_list_item_big img {
+  height: 6rem !important;
+  margin-bottom: .5rem !important;
+}
 .sponsors_list_item_logo {
   display: block;
   width: auto !important;
@@ -46,10 +51,18 @@
   .sponsors_list_item div, .sponsors_list_item img {
     height: 3rem !important;
   }
+  .sponsors_list_item_big div,
+  .sponsors_list_item_big img {
+    height: 4rem !important;
+  }
 }
 @media (max-width: 767.98px) {
   .sponsors_list_item div, .sponsors_list_item img {
     height: 2rem !important;
+  }
+  .sponsors_list_item_big div,
+  .sponsors_list_item_big img {
+    height: 3rem !important;
   }
 }
 .sponsors_cards {
